@@ -1,0 +1,50 @@
+generator client {
+  provider   = "prisma-client"
+  output     = "../generated/prisma"
+  engineType = "client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id              String    @id @default(uuid()) @db.Uuid()
+  email           String    @unique
+  emailVerified   Boolean   @default(false)
+  emailVerifiedAt DateTime?
+  hashedPassword  String
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  deletedAt       DateTime?
+
+  session Session[]
+}
+
+model Session {
+  id        String   @id @default(uuid()) @db.Uuid()
+  userId    String   @db.Uuid()
+  token     String   @unique
+  userAgent String?
+  ip        String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, token])
+  @@index([userId], map: "idx_sessions_user_id")
+  @@index([expiresAt], map: "idx_sessions_expires_at")
+  @@map("sessions")
+}
+
+// For old session token to cleanup
+model TokenCleanupQueue {
+  id          String   @id @default(uuid()) @db.Uuid()
+  userId      String   @db.Uuid()
+  hashedToken String
+  cleanupAt   DateTime @default(dbgenerated("(now() + '00:15:00'::interval)"))
+  createdAt   DateTime @default(now())
+
+  @@index([cleanupAt])
+  @@map("token_cleanup_queue")
+}

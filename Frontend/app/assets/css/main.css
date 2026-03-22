@@ -1,0 +1,162 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 
+  ----------------------------------------------------------------------
+  RADIX 1-12 COLOR SYSTEM TEMPLATE
+  ----------------------------------------------------------------------
+  How to use:
+  1. Paste your Accent hex codes into --accent-1 to --accent-12
+  2. Paste your Neutral/Gray hex codes into --gray-1 to --gray-12
+  3. That's it! The semantic variables below are auto-mapped.
+  ----------------------------------------------------------------------
+*/
+:root {
+  /* ------------------------------------------------ */
+  /* 1. PASTE YOUR PALETTE HERE (Light Mode)          */
+  /* ------------------------------------------------ */
+  /* Accent Palette (e.g., Blue, Brand) */
+  --accent-1: #ffffff; /* App bg */
+  --accent-2: #ffffff; /* Subtle bg */
+  --accent-3: #ffffff; /* UI normal */
+  --accent-4: #ffffff; /* UI hover */
+  --accent-5: #ffffff; /* UI active */
+  --accent-6: #ffffff; /* Border subtle */
+  --accent-7: #ffffff; /* Border normal */
+  --accent-8: #ffffff; /* Border focus */
+  --accent-9: #ffffff; /* Solid bg */
+  --accent-10: #ffffff; /* Solid hover */
+  --accent-11: #ffffff; /* Text low */
+  --accent-12: #ffffff; /* Text high */
+  /* Gray Palette (e.g., Slate, Gray, Sand) */
+  --gray-1: #ffffff;
+  --gray-2: #ffffff;
+  --gray-3: #ffffff;
+  --gray-4: #ffffff;
+  --gray-5: #ffffff;
+  --gray-6: #ffffff;
+  --gray-7: #ffffff;
+  --gray-8: #ffffff;
+  --gray-9: #ffffff;
+  --gray-10: #ffffff;
+  --gray-11: #ffffff;
+  --gray-12: #ffffff;
+  /* ------------------------------------------------ */
+  /* 2. AUTOMATIC SEMANTIC MAPPING (Do not edit)      */
+  /* ------------------------------------------------ */
+  /* Backgrounds */
+  --bg-app: var(--gray-1);
+  --bg-panel: var(--gray-2);
+  --bg-accent-subtle: var(--accent-2);
+  /* Interactive Components */
+  --component-bg: var(--gray-3);
+  --component-bg-hover: var(--gray-4);
+  --component-bg-active: var(--gray-5);
+  --accent-component-bg: var(--accent-3);
+  --accent-component-bg-hover: var(--accent-4);
+  --accent-component-bg-active: var(--accent-5);
+  /* Borders */
+  --border-subtle: var(--gray-6);
+  --border-default: var(--gray-7);
+  --border-strong: var(--gray-8);
+  --accent-border-subtle: var(--accent-6);
+  --accent-border-default: var(--accent-7);
+  --accent-border-focus: var(--accent-8);
+  /* Solids */
+  --solid-bg: var(--accent-9);
+  --solid-bg-hover: var(--accent-10);
+  --solid-text: #ffffff;
+  /* Text */
+  --text-low-contrast: var(--gray-11);
+  --text-high-contrast: var(--gray-12);
+  --text-accent-low: var(--accent-11);
+  --text-accent-high: var(--accent-12);
+}
+.dark {
+  /* ------------------------------------------------ */
+  /* 3. PASTE YOUR PALETTE HERE (Dark Mode)           */
+  /* ------------------------------------------------ */
+  --accent-1: #000000;
+  --accent-2: #000000;
+  --accent-3: #000000;
+  --accent-4: #000000;
+  --accent-5: #000000;
+  --accent-6: #000000;
+  --accent-7: #000000;
+  --accent-8: #000000;
+  --accent-9: #000000;
+  --accent-10: #000000;
+  --accent-11: #000000;
+  --accent-12: #000000;
+  --gray-1: #000000;
+  --gray-2: #000000;
+  --gray-3: #000000;
+  --gray-4: #000000;
+  --gray-5: #000000;
+  --gray-6: #000000;
+  --gray-7: #000000;
+  --gray-8: #000000;
+  --gray-9: #000000;
+  --gray-10: #000000;
+  --gray-11: #000000;
+  --gray-12: #000000;
+
+  /* ------------------------------------------------ */
+  /* 2. AUTOMATIC SEMANTIC MAPPING (Do not edit)      */
+  /* ------------------------------------------------ */
+  /* Backgrounds */
+  --bg-app: var(--gray-1);
+  --bg-panel: var(--gray-2);
+  --bg-accent-subtle: var(--accent-2);
+  /* Interactive Components */
+  --component-bg: var(--gray-3);
+  --component-bg-hover: var(--gray-4);
+  --component-bg-active: var(--gray-5);
+  --accent-component-bg: var(--accent-3);
+  --accent-component-bg-hover: var(--accent-4);
+  --accent-component-bg-active: var(--accent-5);
+  /* Borders */
+  --border-subtle: var(--gray-6);
+  --border-default: var(--gray-7);
+  --border-strong: var(--gray-8);
+  --accent-border-subtle: var(--accent-6);
+  --accent-border-default: var(--accent-7);
+  --accent-border-focus: var(--accent-8);
+  /* Solids */
+  --solid-bg: var(--accent-9);
+  --solid-bg-hover: var(--accent-10);
+  --solid-text: #ffffff;
+  /* Text */
+  --text-low-contrast: var(--gray-11);
+  --text-high-contrast: var(--gray-12);
+  --text-accent-low: var(--accent-11);
+  --text-accent-high: var(--accent-12);
+}
+@theme {
+  /* ------------------------------------------------ */
+  /* 4. TAILWIND EXPOSURE                             */
+  /* ------------------------------------------------ */
+  --color-bg-app: var(--bg-app);
+  --color-bg-panel: var(--bg-panel);
+  --color-bg-accent-subtle: var(--bg-accent-subtle);
+  --color-component-bg: var(--component-bg);
+  --color-component-bg-hover: var(--component-bg-hover);
+  --color-component-bg-active: var(--component-bg-active);
+  --color-accent-component-bg: var(--accent-component-bg);
+  --color-accent-component-bg-hover: var(--accent-component-bg-hover);
+  --color-accent-component-bg-active: var(--accent-component-bg-active);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-accent-border-subtle: var(--accent-border-subtle);
+  --color-accent-border-default: var(--accent-border-default);
+  --color-accent-border-focus: var(--accent-border-focus);
+  --color-solid-bg: var(--solid-bg);
+  --color-solid-bg-hover: var(--solid-bg-hover);
+  --color-solid-text: var(--solid-text);
+  --color-text-low-contrast: var(--text-low-contrast);
+  --color-text-high-contrast: var(--text-high-contrast);
+  --color-text-accent-low: var(--text-accent-low);
+  --color-text-accent-high: var(--text-accent-high);
+}
