@@ -1,0 +1,890 @@
+{
+  "gyms": [
+    {
+      "id": "1",
+      "name": "Fitness Camp Gym",
+      "barangay": "San Miguel",
+      "address": "Junction 1 Center (between National Book Store and Honda Prestige), Bgy. San Miguel, Puerto Princesa, Philippines, 5300.",
+      "location": {
+        "lat": 9.7409549,
+        "lng": 118.7430675
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1770794811/profile_bwpvso.png",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770798462/3_mqys1z.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770798460/1_wxo2yq.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770798460/2_aavyec.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770798460/4_h51zuz.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "6:00 AM",
+          "close": "9:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/2vA7UZDJBK7SnWmNA",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/SeeYouAtTheCamp"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 908 211 4362"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Ironworks Fitness Gym",
+      "barangay": "Maunlad",
+      "address": "102 Abad Santos Cor. Lacao Sts. Puerto Princesa CIty, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7353433,
+        "lng": 118.7396882
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1770990576/profile_crd9nb.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770990591/4_jzrxqz.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770990592/2_x6ovbq.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770990583/1_zrthfh.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770990606/3_uidbuu.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "6:30 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "6:30 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "6:30 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "6:30 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "6:30 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "6:30 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed",
+          "close": "Closed"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/93SFFX7q4e16UG9X8",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/profile.php?id=100054232880507"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 929 817 2720"
+      }
+    },
+    {
+      "id": "3",
+      "name": "FusionFit Gym",
+      "barangay": "San Manuel",
+      "address": "L14 Blk 8 Kalayaan Homeowners' Association, San Manuel Road, Puerto Princesa City, 5300 Palawan.",
+      "location": {
+        "lat": 9.7744726,
+        "lng": 118.7619618
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1770993221/profile_gjapje.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770993243/3_nnbgwg.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770993240/4_c6jcxi.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770993237/2_ucchyd.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1770993238/1_whog8b.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "7:00 AM",
+          "close": "9:30 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/9UntA4juUyo4Jdwb9",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/fusionfitgym.bodybuilding"
+        },
+        {
+          "name": "tiktok",
+          "link": "https://www.tiktok.com/@fusionfit.gym.ppc"
+        },
+        {
+          "name": "instagram",
+          "link": "https://www.instagram.com/fusionfitgymppc"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 995 317 3383",
+        "email": "fusionfitgym.ffg@gmail.com"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Fitness Factor Palawan",
+      "barangay": "Santa Monica",
+      "address": "Reginio Avenue Cor. Rosal Street, Brgy. Santa Monica, Mountain View Zone 1, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7934645,
+        "lng": 118.7301137
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771108353/profile_yoc5xw.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771108351/2_izk6zv.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771108348/1_qoz8ql.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771108348/3_rn20tt.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771108348/4_qfoebu.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "7:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "7:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "7:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "7:00 AM",
+          "close": "9:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "9:00 AM",
+          "close": "9:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/Br6ykZzQ8ZqBrXo5A",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/FitnessFactorPalawanGym"
+        },
+        {
+          "name": "instagram",
+          "link": "https://www.instagram.com/fitnessfactorpalawan"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "IronCore Fitness Gym",
+      "barangay": "San Jose",
+      "address": "St. Mary Covered Court, Makopa St., Brgy. San Jose, PPC, Palawan.",
+      "location": {
+        "lat": 9.7905142,
+        "lng": 118.7517816
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109414/profile1_xwnmg3.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109411/1_mhqjdl.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109409/2_xxzdwy.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109410/4_ickr2q.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109410/3_nbpzw4.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "10:00 AM",
+          "close": "10:30 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/s8LZaDZppG5vDhuB8",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/profile.php?id=61578693112739"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Sunlight Gym and Bodyworks",
+      "barangay": "Tagumpay",
+      "address": "Malvar Street, Barangay Tagumpay, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7427164,
+        "lng": 118.734288
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771110067/profile1_h02qkz.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109896/2_xeajfb.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109895/3_rcbd6t.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109892/1_pbeevf.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771109892/4_i2mwmx.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/Sj9mN9xvryVWBvLL8",
+      "social_links": [
+        { "name": "facebook", "link": "https://web.facebook.com/sunlightgym" },
+        {
+          "name": "website",
+          "link": "http://www.sunlighthotelsandresorts.com/"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 910 198 1501",
+        "email": "fsa1.sghp@sunlighthotelsandresorts.com"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Always Active Fitness",
+      "barangay": "San Jose",
+      "address": "Skytel, Commercial Building, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7824187,
+        "lng": 118.7478928
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771111495/profil1_cev3ay.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771111492/3_ts08ew.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771111489/2_jxwyhh.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771111484/4_z6ouno.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771111483/1_rinbjy.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/4h6SDuXdDhjoR2Z78",
+      "social_links": [
+        { "name": "facebook", "link": "https://web.facebook.com/AAFPalawan" },
+        {
+          "name": "instagram",
+          "link": "https://www.instagram.com/alwaysactive.fitness"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 945 660 5354",
+        "email": "aafpalawan@yahoo.com"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Seconds Fitness",
+      "barangay": "Santa Monica",
+      "address": "2nd Floor, Paul Michael Warehouse, PME Compound, Barangay Sta. Monica, Puerto Princesa City, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7879739,
+        "lng": 118.7378802
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771112961/profile_vm9f8x.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771112975/4_qgeq3e.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771112972/3_kspjva.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771112971/2_qbhgni.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771112967/1_naznzk.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "6:00 AM",
+          "close": "11:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/hcgZbBaUU2PAYndn7",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/profile.php?id=61574454727512"
+        }
+      ],
+      "contact_info": {
+        "email": "patrickrillo03@yahoo.com"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Cuerpo Fitness Gym",
+      "barangay": "Tiniguiban",
+      "address": "PSU Road, Brgy. Tiniguiban, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.778854,
+        "lng": 118.735928
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771135982/profile_ekoofq.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771135898/3_jnnt91.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771135898/1_aavjif.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771135896/4_z4niif.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771135897/2_ldrsld.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "3:00 PM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "Closed",
+          "close": "Closed"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/31LrE9nTHSeE2ZVD8",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/cuerpofitnessgym1"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 936 990 1011",
+        "email": "markjasondneri@gmail.com"
+      }
+    },
+    {
+      "id": "10",
+      "name": "XXL Gym Puerto Princesa",
+      "barangay": "Sicsican",
+      "address": "Dimalanta Road, Brgy. Sicsican, PPC.",
+      "location": {
+        "lat": 9.7976912,
+        "lng": 118.7128429
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771137479/profile_ity9al.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771137484/4_tyny88.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771137482/3_ora0zy.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771137482/1_kb55ri.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771137481/2_rqvswu.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "8:00 AM",
+          "close": "8:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/8ePsLkTvuqREXNh17",
+      "social_links": [
+        { "name": "facebook", "link": "https://web.facebook.com/XXLGYMPPCPH" }
+      ],
+      "contact_info": {
+        "phone": "+63 930 019 7846",
+        "email": "jennespanolaxxl@gmail.com"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Island Punch Fitness",
+      "barangay": "San Pedro",
+      "address": "Kalikasan Homes Brgy Sanpedro, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.753542,
+        "lng": 118.7610548
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771138849/profile_pfwxls.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771138857/4_sy9gfi.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771138855/2_qbyrto.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771138855/3_ks6ltg.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771138853/1_tr6ifq.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "6:30 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Tuesday",
+          "time": "6:30 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "6:30 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Thursday",
+          "time": "6:30 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "6:30 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "6:30 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "7:00 AM",
+          "close": "5:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/rcGP6Q84PEiKaY4M7",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/IslandPunchFitness"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 927 888 8225",
+        "email": "islandpunchfit@gmail.com"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Mizar Fitness Gym",
+      "barangay": "San Miguel",
+      "address": "PPVR+R3J, Puerto Princesa City, Palawan.",
+      "location": {
+        "lat": 9.7445904,
+        "lng": 118.7401395
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771139693/profile_g78gco.png",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771139615/2_ok28zh.png",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771139611/1_gqdopi.png"
+      ],
+      "map_link": "https://maps.app.goo.gl/E9b4vRVoGEjASgcDA"
+    },
+    {
+      "id": "13",
+      "name": "Cold One Gym",
+      "barangay": "Maunlad",
+      "address": "Mabini Street, Brgy. Maunlad, PPC @ the back of Melvicris Water Refilling Station, Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7331943,
+        "lng": 118.7396255
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771140792/profile_jxrs1v.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771140788/4_qbkgfc.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771140786/3_aqncks.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771140785/1_v5qjgq.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771140783/2_ahzawf.jpg"
+      ],
+      "opening_hours": [
+        {
+          "time": "Always Open"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/7GrMcNJ9BjxiH2Lu6",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/profile.php?id=100090094856129"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 909 875 0831"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Palmetcon Fitness",
+      "barangay": "San Miguel",
+      "address": "P. Vicente St, San Miguel, Puerto Princesa City, 5300 Palawan.",
+      "location": {
+        "lat": 9.7412364,
+        "lng": 118.7426957
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771141448/profile_hgo3cx.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771141420/4_in2pqr.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771141416/3_rxlz9w.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771141415/2_lyt2cz.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771141414/1_qdnbul.jpg"
+      ],
+      "opening_hours": [
+        {
+          "time": "Always Open"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/GzNB8AjW6WdXEmHN8",
+      "social_links": [
+        { "name": "facebook", "link": "https://web.facebook.com/palmetcon" }
+      ],
+      "contact_info": {
+        "phone": "+63 906 477 8070"
+      }
+    },
+    {
+      "id": "15",
+      "name": "Ground Zero Fitness Gym",
+      "barangay": "San Miguel",
+      "address": "Malvar Street (Behind GearSpot), Puerto Princesa, Philippines.",
+      "location": {
+        "lat": 9.7435627,
+        "lng": 118.7387411
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1771143839/profile_ue8gwl.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771142953/2_gta009.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771142948/4_f6nwdh.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771142947/1_fjeozx.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1771142944/3_itkawg.jpg"
+      ],
+      "opening_hours": [
+        {
+          "time": "Always Open"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/GzNB8AjW6WdXEmHN8",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/profile.php?id=61577891918614"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Palawan Jiu Jitsu BJJ",
+      "barangay": "Sicsican",
+      "address": "Seven Dragons Gym Husky Cafe Sicsican, Puerto Princesa, Philippines",
+      "location": {
+        "lat": 9.7988609,
+        "lng": 118.7125788
+      },
+      "profile_image": "https://res.cloudinary.com/duasfk8fg/image/upload/v1772360436/profile_fyopmz.jpg",
+      "images": [
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1772360443/2_avynjl.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1772360445/4_ijbfyy.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1772360445/3_eouega.jpg",
+        "https://res.cloudinary.com/duasfk8fg/image/upload/v1772360442/1_njklio.jpg"
+      ],
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "time": "Closed",
+          "close": "Closed"
+        },
+        {
+          "day": "Tuesday",
+          "time": "7:20 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Wednesday",
+          "time": "Closed",
+          "close": "Closed"
+        },
+        {
+          "day": "Thursday",
+          "time": "7:20 AM",
+          "close": "9:30 PM"
+        },
+        {
+          "day": "Friday",
+          "time": "3:00 AM",
+          "close": "5:00 PM"
+        },
+        {
+          "day": "Saturday",
+          "time": "6:00 AM",
+          "close": "8:00 PM"
+        },
+        {
+          "day": "Sunday",
+          "time": "5:00 PM",
+          "close": "7:00 PM"
+        }
+      ],
+      "map_link": "https://maps.app.goo.gl/q9m6bfotAKkXtCne9",
+      "social_links": [
+        {
+          "name": "facebook",
+          "link": "https://web.facebook.com/overlimitbjjpalawan"
+        }
+      ],
+      "contact_info": {
+        "phone": "+63 909 875 0831",
+        "email": "overlimitpalawanbjj@gmail.com"
+      }
+    }
+  ]
+}

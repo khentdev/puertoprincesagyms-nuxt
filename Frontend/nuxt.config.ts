@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['api/**', 'errors/**']
+    dirs: ['data/**','store/**']
   },
 
   icon: {
