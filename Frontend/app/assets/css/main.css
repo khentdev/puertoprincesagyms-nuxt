@@ -17,31 +17,31 @@
   /* 1. PASTE YOUR PALETTE HERE (Light Mode)          */
   /* ------------------------------------------------ */
   /* Accent Palette (e.g., Blue, Brand) */
-  --accent-1: #ffffff; /* App bg */
-  --accent-2: #ffffff; /* Subtle bg */
-  --accent-3: #ffffff; /* UI normal */
-  --accent-4: #ffffff; /* UI hover */
-  --accent-5: #ffffff; /* UI active */
-  --accent-6: #ffffff; /* Border subtle */
-  --accent-7: #ffffff; /* Border normal */
-  --accent-8: #ffffff; /* Border focus */
-  --accent-9: #ffffff; /* Solid bg */
-  --accent-10: #ffffff; /* Solid hover */
-  --accent-11: #ffffff; /* Text low */
-  --accent-12: #ffffff; /* Text high */
+  --accent-1: #F0F2F0; /* App bg */
+  --accent-2: #E8EEEA; /* Subtle bg */
+  --accent-3: #DAE8DF; /* UI normal */
+  --accent-4: #CCE1D3; /* UI hover */
+  --accent-5: #BBD7C5; /* UI active */
+  --accent-6: #A6CBB4; /* Border subtle */
+  --accent-7: #8ABA9D; /* Border normal */
+  --accent-8: #62A47F; /* Border focus */
+  --accent-9: #2F855A; /* Solid bg */
+  --accent-10: #1D774D; /* Solid hover */
+  --accent-11: #0F6E45; /* Text low */
+  --accent-12: #23392C; /* Text high */
   /* Gray Palette (e.g., Slate, Gray, Sand) */
-  --gray-1: #ffffff;
-  --gray-2: #ffffff;
-  --gray-3: #ffffff;
-  --gray-4: #ffffff;
-  --gray-5: #ffffff;
-  --gray-6: #ffffff;
-  --gray-7: #ffffff;
-  --gray-8: #ffffff;
-  --gray-9: #ffffff;
-  --gray-10: #ffffff;
-  --gray-11: #ffffff;
-  --gray-12: #ffffff;
+  --gray-1: #F0F0F0;
+  --gray-2: #ECECEC;
+  --gray-3: #E2E2E2;
+  --gray-4: #D9D9D9;
+  --gray-5: #D1D1D1;
+  --gray-6: #C9C9C9;
+  --gray-7: #BDBDBD;
+  --gray-8: #AAA;
+  --gray-9: #7D7D7D;
+  --gray-10: #737373;
+  --gray-11: #565656;
+  --gray-12: #202020;
   /* ------------------------------------------------ */
   /* 2. AUTOMATIC SEMANTIC MAPPING (Do not edit)      */
   /* ------------------------------------------------ */
@@ -77,30 +77,30 @@
   /* ------------------------------------------------ */
   /* 3. PASTE YOUR PALETTE HERE (Dark Mode)           */
   /* ------------------------------------------------ */
-  --accent-1: #000000;
-  --accent-2: #000000;
-  --accent-3: #000000;
-  --accent-4: #000000;
-  --accent-5: #000000;
-  --accent-6: #000000;
-  --accent-7: #000000;
-  --accent-8: #000000;
-  --accent-9: #000000;
-  --accent-10: #000000;
-  --accent-11: #000000;
-  --accent-12: #000000;
-  --gray-1: #000000;
-  --gray-2: #000000;
-  --gray-3: #000000;
-  --gray-4: #000000;
-  --gray-5: #000000;
-  --gray-6: #000000;
-  --gray-7: #000000;
-  --gray-8: #000000;
-  --gray-9: #000000;
-  --gray-10: #000000;
-  --gray-11: #000000;
-  --gray-12: #000000;
+  --accent-1: #151C18;
+  --accent-2: #17211B;
+  --accent-3: #163223;
+  --accent-4: #123F28;
+  --accent-5: #154C31;
+  --accent-6: #1C593B;
+  --accent-7: #226A46;
+  --accent-8: #267E53;
+  --accent-9: #2F855A;
+  --accent-10: #1D774D;
+  --accent-11: #79CC9D;
+  --accent-12: #ABF3C8;
+  --gray-1: #1A1A1A;
+  --gray-2: #212121;
+  --gray-3: #292929;
+  --gray-4: #2F2F2F;
+  --gray-5: #363636;
+  --gray-6: #3E3E3E;
+  --gray-7: #4A4A4A;
+  --gray-8: #616161;
+  --gray-9: #6E6E6E;
+  --gray-10: #7C7C7C;
+  --gray-11: #B4B4B4;
+  --gray-12: #EEE;
 
   /* ------------------------------------------------ */
   /* 2. AUTOMATIC SEMANTIC MAPPING (Do not edit)      */

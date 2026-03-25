@@ -1,8 +1,8 @@
-<template>
-    <h1 class="text-3xl font-bold underline">Home</h1>
-</template>
+<template></template>
 <script setup lang="ts">
 definePageMeta({
-    layout: "default",
-})
+  layout: "default",
+  path: "/",
+  redirect: { name: "gym-list-all" },
+});
 </script>

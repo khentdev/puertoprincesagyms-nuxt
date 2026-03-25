@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-
+  ssr: false,
   css: ['~/assets/css/main.css'],
 
   modules: [
@@ -14,22 +14,11 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
-    '@peterbud/nuxt-query',
+    '@nuxtjs/color-mode',
   ],
 
-  nuxtQuery: {
-    autoImports: true,
-    queryClientOptions: {
-      defaultOptions: {
-        queries: {
-          refetchOnWindowFocus: false,
-        }
-      }
-    }
-  },
-
   imports: {
-    dirs: ['data/**','store/**']
+    dirs: ['data/**', 'store/**']
   },
 
   icon: {
