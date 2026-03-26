@@ -3,6 +3,6 @@
 definePageMeta({
   layout: "default",
   path: "/",
-  redirect: { name: "gym-list-all" },
+  redirect: { name: "gyms-list-all" },
 });
 </script>

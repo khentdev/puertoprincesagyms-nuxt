@@ -37,6 +37,8 @@ export const BARANGAYS =
 export type Barangays = typeof BARANGAYS[number];
 export type ValidBarangays = Exclude<Barangays, "All Locations">;
 
+export const VALID_BARANGAYS = BARANGAYS.filter((barangay) => barangay !== "All Locations") as readonly ValidBarangays[];
+
 export interface GymCardData {
     id: string;
     name: string;
