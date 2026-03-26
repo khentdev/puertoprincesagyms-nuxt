@@ -99,10 +99,6 @@ const barangayNavigations: BarangayNavigations[] = [
     label: "San Pedro",
   },
   {
-    id: "Manggahan",
-    label: "Manggahan",
-  },
-  {
     id: "San Miguel",
     label: "San Miguel",
   },

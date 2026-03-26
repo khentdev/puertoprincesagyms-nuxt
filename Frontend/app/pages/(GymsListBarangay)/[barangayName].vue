@@ -3,6 +3,9 @@
     class="h-[calc(100dvh-122px)] overflow-y-auto px-5 py-6 md:py-10 space-y-5 md:space-y-8"
   >
     <header-title />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <GymCard v-for="gym in filteredGyms" :key="gym.id" :gym="gym" />
+    </div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -36,5 +39,5 @@ definePageMeta({
 });
 
 const gymStore = useGymStore();
-
+const { filteredGyms, selectedBarangay } = storeToRefs(gymStore);
 </script>

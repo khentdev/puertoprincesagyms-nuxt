@@ -30,7 +30,7 @@ export interface GymV2 extends Gym {
 }
 
 export const BARANGAYS =
-    ["All Locations", "San Pedro", "Manggahan", "San Miguel", "Maunlad",
+    ["All Locations", "San Pedro", "San Miguel", "Maunlad",
         "San Manuel", "Santa Monica", "San Jose", "Tagumpay", "Tiniguiban",
         "Sicsican"] as const;
 
