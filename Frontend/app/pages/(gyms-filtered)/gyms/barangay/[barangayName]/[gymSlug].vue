@@ -34,6 +34,7 @@
                   loading="lazy"
                   decoding="async"
                   fetchpriority="high"
+                  @click="openImageviewer(selectedGym.profile_image)"
                 />
               </div>
               <div class="flex flex-col gap-2 flex-1 min-w-0 pt-1">
@@ -71,7 +72,7 @@
                 class="absolute inset-0 flex items-center justify-center bg-component-bg rounded-lg"
               >
                 <div class="flex items-center gap-2">
-                  <Icon name="lucide:loader-2" class="size-4 animate-spin" />
+                  <Icon name="lucide:loader-2" class="animate-spin" />
                   <p class="text-text-low-contrast">Loading map...</p>
                 </div>
               </div>
@@ -104,6 +105,7 @@
                 v-for="(img, index) in selectedGym.images"
                 :key="index"
                 class="aspect-video rounded-lg overflow-hidden bg-component-bg border border-border-subtle shadow-sm relative group cursor-pointer"
+                @click="openImageviewer(img)"
               >
                 <nuxt-img
                   :src="img"
@@ -238,6 +240,12 @@
         </div>
       </div>
     </transition>
+    <image-viewer-modal
+      :is-open="isImageViewerOpen"
+      :images="viewerImages"
+      :initial-index="viewerInitialIndex"
+      @close="closeImageViewer"
+    />
   </teleport>
 </template>
 <script lang="ts" setup>
@@ -300,8 +308,9 @@ const socialLinkIconName = (socialLink: string) => {
       facebook: "lucide:facebook",
       instagram: "lucide:instagram",
       tiktok: "prime:tiktok",
+      website: "lucide:globe",
     }[socialLink];
-  return "";
+  return "lucide:link";
 };
 
 const handleCloseGymDetailsModal = () => {
@@ -325,4 +334,36 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("keydown", handleKeydown);
 });
+
+const isImageViewerOpen = ref(false);
+const viewerImages = computed(() => {
+  if (!selectedGym.value) return [];
+
+  const images = [];
+  images.push({
+    url: selectedGym.value.profile_image,
+    alt: `${selectedGym.value.name} profile`,
+  });
+
+  if (selectedGym.value.images && selectedGym.value.images.length > 0) {
+    selectedGym.value.images.forEach((img, index) => {
+      images.push({
+        url: img,
+        alt: `${selectedGym.value!.name} image ${index + 1}`,
+      });
+    });
+  }
+  return images;
+});
+
+const viewerInitialIndex = ref(0);
+function openImageviewer(ImageUrl: string) {
+  const index = viewerImages.value.findIndex((img) => img.url === ImageUrl);
+  viewerInitialIndex.value = index >= 0 ? index : 0;
+  isImageViewerOpen.value = true;
+}
+
+function closeImageViewer() {
+  isImageViewerOpen.value = false;
+}
 </script>
