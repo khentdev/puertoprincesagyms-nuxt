@@ -1,12 +1,13 @@
 <template>
   <teleport to="body">
-    <transition>
+    <transition name="modal" :duration="500">
       <div
-        v-if="selectedGym"
+        v-if="selectedGym && isOpen"
         class="modal-wrapper fixed inset-0 z-50 flex justify-center items-end md:items-center p-0 md:p-4"
+        @click.self="handleCloseGymDetailsModal"
       >
         <div
-          @click="handleCloseGymDetailsModal()"
+          @click="handleCloseGymDetailsModal"
           class="modal-backdrop absolute inset-0 bg-black/50 backdrop-blur-sm"
         ></div>
 
@@ -267,7 +268,6 @@ definePageMeta({
       gymStore.setSelectedBarangay("All Locations");
       return navigateTo({ name: "gyms-list-all" });
     }
-    gymStore.setSelectedGym(gym);
   },
 });
 const route = useRoute();
@@ -300,6 +300,14 @@ const staticMapUrl = computed(() => {
 
   mapUrlCache.set(gymId, url);
   return url;
+});
+
+const isOpen = ref(false);
+
+onMounted(() => {
+  nextTick(() => {
+    isOpen.value = true;
+  });
 });
 
 const socialLinkIconName = (socialLink: string) => {
@@ -367,3 +375,41 @@ function closeImageViewer() {
   isImageViewerOpen.value = false;
 }
 </script>
+<style scoped>
+.modal-enter-active .modal-backdrop,
+.modal-leave-active .modal-backdrop {
+  transition: opacity 0.3s ease;
+}
+
+.modal-enter-from .modal-backdrop,
+.modal-leave-to .modal-backdrop {
+  opacity: 0;
+}
+
+.modal-enter-active .modal-content,
+.modal-leave-active .modal-content {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-enter-from .modal-content {
+  transform: translateY(100%);
+  opacity: 0.5;
+}
+
+.modal-leave-to .modal-content {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-enter-from .modal-content {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+
+  .modal-leave-to .modal-content {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+}
+</style>
