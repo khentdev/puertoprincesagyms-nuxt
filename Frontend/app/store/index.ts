@@ -57,3 +57,5 @@ export type SortOption = {
     key: SortKey
     order: SortOrder
 }
+
+export type SocialLinks = "facebook" | "tiktok" | "instagram"

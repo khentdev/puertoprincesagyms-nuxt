@@ -4,16 +4,22 @@
   >
     <header-title />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <GymCard v-for="gym in filteredGyms" :key="gym.id" :gym="gym" />
+      <GymCard
+        v-for="gym in filteredGyms"
+        :key="gym.id"
+        :gym
+        :set-selected-gym="setSelectedGym"
+      />
     </div>
   </section>
+  <!-- This is where the modal will be rendered (the gymSlug.vue) -->
+  <NuxtPage />
 </template>
 <script lang="ts" setup>
 import type { ValidBarangays } from "~/store";
 definePageMeta({
   layout: "default",
   name: "barangay",
-  path: "/barangay/:barangayName?",
   middleware: (to) => {
     const gymStore = useGymStore();
 
@@ -39,5 +45,13 @@ definePageMeta({
 });
 
 const gymStore = useGymStore();
-const { filteredGyms, selectedBarangay } = storeToRefs(gymStore);
+const { filteredGyms } = storeToRefs(gymStore);
+
+const setSelectedGym = (gym: GymCardData) => {
+  gymStore.setSelectedGym(gym);
+  navigateTo({
+    name: "gym-details-modal",
+    params: { gymSlug: titleCaseToKebab(gym.name) },
+  });
+};
 </script>

@@ -18,12 +18,12 @@ export default defineNuxtConfig({
   ],
 
   imports: {
-    dirs: ['data/**', 'store/**']
+    dirs: ['data/**', 'store/**','config/**']
   },
 
   icon: {
     serverBundle: {
-      collections: ['lucide']
+      collections: ['lucide','prime']
     }
   },
 
@@ -33,7 +33,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase: ''
+      apiBase: '',
+      googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY,
     }
   },
 })

@@ -1,15 +1,15 @@
 <template>
   <div
-    @click="setSelectedGym({ id: props.gym.id })"
+    @click="setSelectedGym(gym)"
     class="flex flex-col h-full bg-bg-panel border cursor-pointer group border-border-subtle rounded-lg transition-all overflow-hidden duration-200 hover:border-border-strong hover:shadow-lg"
   >
     <div class="aspect-video w-full bg-component-bg relative overflow-hidden">
-      <NuxtImg
+      <nuxt-img
         :src="gym.profile_image"
         :alt="gym.name"
         decoding="async"
         fetchpriority="low"
-        class="w-full h-full object-cover rounded-t-lg transition-transform duration-500 hover:scale-105"
+        class="w-full h-full object-cover rounded-t-lg transition-transform duration-500 hover:scale-110 scale-105"
         loading="lazy"
       />
     </div>
@@ -53,9 +53,8 @@
 <script lang="ts" setup>
 interface GymCardProps {
   gym: GymCardData;
+  setSelectedGym: (gym: GymCardData) => void;
 }
 
 const props = defineProps<GymCardProps>();
-const gymStore = useGymStore();
-const { setSelectedGym } = gymStore;
 </script>

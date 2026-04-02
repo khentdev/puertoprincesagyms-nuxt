@@ -6,7 +6,7 @@
 <script lang="ts" setup>
 definePageMeta({
     layout: "default",
-    path:"/",
+    path:"/gyms",
     name:"gyms-list-all"
 })
 </script>
