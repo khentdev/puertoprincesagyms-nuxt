@@ -1,6 +1,6 @@
 <template>
   <div
-    @click="setSelectedGym(gym)"
+    @click="handleOpenModal(gym)"
     class="flex flex-col h-full bg-bg-panel border cursor-pointer group border-border-subtle rounded-lg transition-all overflow-hidden duration-200 hover:border-border-strong hover:shadow-lg"
   >
     <div class="aspect-video w-full bg-component-bg relative overflow-hidden">
@@ -53,8 +53,15 @@
 <script lang="ts" setup>
 interface GymCardProps {
   gym: GymCardData;
-  setSelectedGym: (gym: GymCardData) => void;
 }
 
 const props = defineProps<GymCardProps>();
+
+const emit = defineEmits<{
+  "open-gym-details-modal": [gym: GymCardData];
+}>();
+
+const handleOpenModal = (gym: GymCardData) => {
+  emit("open-gym-details-modal", gym);
+};
 </script>
