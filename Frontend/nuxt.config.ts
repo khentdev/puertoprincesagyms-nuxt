@@ -15,16 +15,21 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
+    '@nuxtjs/seo',
   ],
 
   imports: {
-    dirs: ['data/**', 'store/**','config/**']
+    dirs: ['data/**', 'store/**', 'config/**']
+  },
+
+  ogImage: {
+    enabled: false,
   },
 
   icon: {
     serverBundle: {
-      collections: ['lucide','prime']
-    }
+      collections: ['lucide', 'prime']
+    },
   },
 
   vite: {
@@ -35,6 +40,7 @@ export default defineNuxtConfig({
     public: {
       apiBase: '',
       googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+      googleMapsMapId: process.env.NUXT_PUBLIC_GOOGLE_MAPS_MAP_ID,
     }
   },
 })

@@ -2,9 +2,9 @@
   <section
     class="h-[calc(100dvh-122px)] overflow-y-auto px-5 py-6 md:py-10 space-y-5 md:space-y-8"
   >
-    <header-title />
+    <shared-header-title />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <GymCard
+      <shared-gym-card
         v-for="gym in filteredGyms"
         :key="gym.id"
         :gym
@@ -12,7 +12,6 @@
       />
     </div>
   </section>
-  <!-- This is where the modal will be rendered (the gymSlug.vue) -->
   <NuxtPage />
 </template>
 <script lang="ts" setup>

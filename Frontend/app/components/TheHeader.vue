@@ -147,8 +147,7 @@ const setItemRef = (el: unknown, id: Barangays) => {
   if (el instanceof Element) itemRefs.set(id, el);
 };
 
-const router = useRouter();
-const handleBarangayClick = async (barangay: Barangays) => {
+const handleBarangayClick = (barangay: Barangays) => {
   gymStore.setSelectedBarangay(barangay);
 
   nextTick(() => {
@@ -164,9 +163,9 @@ const handleBarangayClick = async (barangay: Barangays) => {
     .toLowerCase()
     .replace(/\s+/g, "-");
   if (barangay.toLowerCase() === "all locations") {
-    await router.push({ name: "gyms-list-all" });
+    navigateTo({ name: "gyms-list-all" });
   } else {
-    await router.push({
+    navigateTo({
       name: "barangay",
       params: { barangayName: sanitizedBarangayParam },
     });
