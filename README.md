@@ -51,8 +51,8 @@ Finding gyms in Puerto Princesa is currently fragmented across social media, wor
 
 Copy `.env.example` to `.env` and fill in the required values:
 ```env
-NUXT_PUBLIC_GOOGLE_MAP_API_KEY=
-NUXT_PUBLIC_GOOGLE_MAP_JS_API_MAP_ID=
+NUXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+NUXT_PUBLIC_GOOGLE_MAPS_MAP_ID=your-google-maps-map-id
 ```
 
 ### Installation
