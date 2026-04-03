@@ -8,7 +8,7 @@
         v-for="gym in filteredGyms"
         :key="gym.id"
         :gym
-        :set-selected-gym="setSelectedGym"
+        @open-gym-details-modal="handleOpenModal"
       />
     </div>
   </section>
@@ -46,7 +46,7 @@ definePageMeta({
 const gymStore = useGymStore();
 const { filteredGyms } = storeToRefs(gymStore);
 
-const setSelectedGym = (gym: GymCardData) => {
+const handleOpenModal = (gym: GymCardData) => {
   gymStore.setSelectedGym(gym);
   navigateTo({
     name: "gym-details-modal",

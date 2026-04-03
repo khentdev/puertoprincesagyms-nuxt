@@ -6,6 +6,7 @@
       class="flex-1 max-h-[60vh] h-[60vh] bg-component-bg rounded-lg overflow-hidden"
     >
       <google-map
+        ref="mapRef"
         :api-key="config.public.googleMapsApiKey"
         style="width: 100%; height: 100%"
         :center="ppcCenter"
@@ -31,6 +32,15 @@
         </marker-cluster>
       </google-map>
     </div>
+    <shared-header-title />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <shared-gym-card
+        v-for="gym in filteredGyms"
+        :key="gym.id"
+        :gym
+        @open-gym-details-modal="handleOpenModal"
+      />
+    </div>
   </section>
   <shared-gym-details-modal @close="handleCloseMapModal" />
 </template>
@@ -52,6 +62,8 @@ const router = useRouter();
 const route = useRoute();
 
 const handleOpenModal = ({ name }: { name: string }) => {
+  if (document.fullscreenElement) document.exitFullscreen();
+
   const gymSlug = titleCaseToKebab(name);
   router.replace({ query: { gym: gymSlug } });
 };

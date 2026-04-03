@@ -156,7 +156,10 @@
                         >
                           Closed
                         </li>
-                        <li v-else class="text-text-low-contrast md:text-base text-sm">
+                        <li
+                          v-else
+                          class="text-text-low-contrast md:text-base text-sm"
+                        >
                           {{ hours.time }} - {{ hours.close }}
                         </li>
                       </ul>
@@ -171,7 +174,7 @@
                 <h1 class="text-lg font-semibold text-text-high-contrast">
                   Contact
                 </h1>
-                <div class="flex flex-col items-start justify-start gap-2">
+                <div class="flex flex-col items-start justify-start gap-2 md:text-base text-sm">
                   <div
                     v-if="selectedGym.contact_info.phone"
                     class="flex items-center gap-2 text-text-high-contrast"
@@ -250,29 +253,7 @@
   </teleport>
 </template>
 <script lang="ts" setup>
-definePageMeta({
-  layout: "default",
-  name: "gym-details-modal",
-  middleware: (to) => {
-    const gymStore = useGymStore();
-    const gymSlug = to.params["gymSlug"] as string;
-    if (!gymSlug) {
-      gymStore.setSelectedBarangay("All Locations");
-      return navigateTo({ name: "gyms-list-all" });
-    }
-
-    const gym = gymStore.gyms.find(
-      (gym) => titleCaseToKebab(gym.name) === gymSlug,
-    );
-    if (!gym) {
-      gymStore.setSelectedBarangay("All Locations");
-      return navigateTo({ name: "gyms-list-all" });
-    }
-  },
-});
-const route = useRoute();
 const gymStore = useGymStore();
-const { closeSelectedGym } = gymStore;
 const { selectedGym } = storeToRefs(gymStore);
 
 const { onEmbedLoad, isEmbedMapLoading, useFallback } = handleEmbedMapLoading();
@@ -321,12 +302,11 @@ const socialLinkIconName = (socialLink: string) => {
   return "lucide:link";
 };
 
-
-const emit = defineEmits(['close'])
+const emit = defineEmits(["close"]);
 
 const handleKeydown = (e: KeyboardEvent) => {
   if (e.key === "Escape" && selectedGym.value) {
-    emit('close');
+    emit("close");
   }
 };
 
