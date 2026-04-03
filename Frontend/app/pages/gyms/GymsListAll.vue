@@ -12,7 +12,7 @@
         :zoom="15"
         :map-id="config.public.googleMapsMapId"
       >
-        <marker-cluster>
+        <marker-cluster :options="{ renderer: clusterRenderer() }">
           <custom-marker
             v-for="gym in filteredGyms"
             :key="gym.id"
@@ -56,6 +56,10 @@ const handleOpenModal = ({ name }: { name: string }) => {
   router.replace({ query: { gym: gymSlug } });
 };
 
+const handleCloseMapModal = () => {
+  router.replace({ name: "gyms-list-all" });
+};
+
 watch(
   () => route.query["gym"],
   (gymSlug) => {
@@ -69,7 +73,33 @@ watch(
   { immediate: true },
 );
 
-const handleCloseMapModal = () => {
-  router.replace({ name: "gyms-list-all" });
-};
+function clusterRenderer() {
+  return {
+    render: ({
+      count,
+      position,
+    }: {
+      count: number;
+      position: google.maps.LatLng;
+    }) => {
+      const radius = 15 + Math.min(count, 20);
+      const size = radius * 2;
+
+      const content = document.createElement("div");
+
+      content.className =
+        "flex items-center justify-center bg-solid-bg text-white rounded-full border-2 border-white font-bold text-xs";
+      content.style.width = `${size}px`;
+      content.style.height = `${size}px`;
+      content.textContent = String(count);
+
+      return new google.maps.marker.AdvancedMarkerElement({
+        position,
+        content,
+        title: `Cluster of ${count} gyms`,
+        zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
+      });
+    },
+  };
+}
 </script>

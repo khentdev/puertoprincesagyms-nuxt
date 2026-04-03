@@ -36,6 +36,14 @@ export default defineNuxtConfig({
     plugins: [tailwindcss() as any],
   },
 
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        types: ["google.maps"]
+      }
+    }
+  },
+
   runtimeConfig: {
     public: {
       apiBase: '',

@@ -156,7 +156,7 @@
                         >
                           Closed
                         </li>
-                        <li v-else class="text-text-low-contrast">
+                        <li v-else class="text-text-low-contrast md:text-base text-sm">
                           {{ hours.time }} - {{ hours.close }}
                         </li>
                       </ul>
