@@ -1,10 +1,12 @@
 <template>
-    <div></div>
+    <div>
+        <h1>gymlist all</h1>
+    </div>
 </template>
 <script lang="ts" setup>
 definePageMeta({
     layout: "default",
-    path:"/",
-    name:"gym-list-all"
+    path:"/gyms",
+    name:"gyms-list-all"
 })
 </script>

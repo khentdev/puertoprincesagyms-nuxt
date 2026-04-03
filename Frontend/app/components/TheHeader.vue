@@ -52,7 +52,7 @@
           v-for="barangay in barangayNavigations"
           :key="barangay.id"
           :ref="(el) => setItemRef(el, barangay.id)"
-          class="shrink-0 flex items-center rounded-2xl group"
+          class="shrink-0 flex items-center rounded-2xl group shadow"
         >
           <button
             :class="[
@@ -97,10 +97,6 @@ const barangayNavigations: BarangayNavigations[] = [
   {
     id: "San Pedro",
     label: "San Pedro",
-  },
-  {
-    id: "Manggahan",
-    label: "Manggahan",
   },
   {
     id: "San Miguel",
@@ -152,7 +148,7 @@ const setItemRef = (el: unknown, id: Barangays) => {
 };
 
 const router = useRouter();
-const handleBarangayClick = (barangay: Barangays) => {
+const handleBarangayClick = async (barangay: Barangays) => {
   gymStore.setSelectedBarangay(barangay);
 
   nextTick(() => {
@@ -167,10 +163,13 @@ const handleBarangayClick = (barangay: Barangays) => {
     .trim()
     .toLowerCase()
     .replace(/\s+/g, "-");
-  if (sanitizedBarangayParam === "all-locations") {
-    // router.push({ name: "index" });
+  if (barangay.toLowerCase() === "all locations") {
+    await router.push({ name: "gyms-list-all" });
   } else {
-    // router.push({ name: "barangay", params: { barangay: sanitizedBarangayParam } });
+    await router.push({
+      name: "barangay",
+      params: { barangayName: sanitizedBarangayParam },
+    });
   }
 };
 </script>

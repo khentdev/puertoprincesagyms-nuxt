@@ -30,12 +30,14 @@ export interface GymV2 extends Gym {
 }
 
 export const BARANGAYS =
-    ["All Locations", "San Pedro", "Manggahan", "San Miguel", "Maunlad",
+    ["All Locations", "San Pedro", "San Miguel", "Maunlad",
         "San Manuel", "Santa Monica", "San Jose", "Tagumpay", "Tiniguiban",
         "Sicsican"] as const;
 
 export type Barangays = typeof BARANGAYS[number];
 export type ValidBarangays = Exclude<Barangays, "All Locations">;
+
+export const VALID_BARANGAYS = BARANGAYS.filter((barangay) => barangay !== "All Locations") as readonly ValidBarangays[];
 
 export interface GymCardData {
     id: string;
@@ -55,3 +57,5 @@ export type SortOption = {
     key: SortKey
     order: SortOrder
 }
+
+export type SocialLinks = "facebook" | "tiktok" | "instagram"
