@@ -15,7 +15,6 @@
   <NuxtPage />
 </template>
 <script lang="ts" setup>
-import type { ValidBarangays } from "~/store";
 definePageMeta({
   layout: "default",
   name: "barangay",
@@ -53,4 +52,18 @@ const handleOpenModal = (gym: GymCardData) => {
     params: { gymSlug: titleCaseToKebab(gym.name) },
   });
 };
+
+const route = useRoute();
+watch(
+  () => route.params["gymSlug"] as string,
+  (gymSlugParams) => {
+    if (gymSlugParams) {
+      const gym = gymStore.gyms.find(
+        (gym) => titleCaseToKebab(gym.name) === gymSlugParams,
+      );
+      if (gym) gymStore.setSelectedGym(gym);
+    }
+  },
+  { immediate: true },
+);
 </script>
