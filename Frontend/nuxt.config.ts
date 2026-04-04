@@ -1,10 +1,21 @@
 import tailwindcss from "@tailwindcss/vite";
+import getDynamicRoutes from "./app/utils/getDynamicRoutes";
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  ssr: false,
   css: ['~/assets/css/main.css'],
+
+  experimental: {
+    payloadExtraction: false,
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: getDynamicRoutes()
+    },
+  },
 
   modules: [
     '@pinia/nuxt',
@@ -20,10 +31,6 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['data/**', 'store/**', 'config/**']
-  },
-
-  ogImage: {
-    enabled: false,
   },
 
   icon: {

@@ -21,27 +21,29 @@
         @click="setColorMode"
         :aria-label="`Switch to ${color.preference === 'dark' ? 'light' : 'dark'} mode`"
       >
-        <transition
-          enter-from-class="opacity-0"
-          enter-to-class="opacity-100"
-          enter-active-class="absolute w-full transition-opacity duration-200 ease-in-out"
-          leave-from-class="opacity-100"
-          leave-to-class="opacity-0"
-          leave-active-class="absolute w-full transition-opacity duration-200 ease-in-out"
-        >
-          <Icon
-            key="sun"
-            name="lucide:sun"
-            v-if="color.preference === 'dark'"
-            class="text-text-high-contrast size-5"
-          />
-          <Icon
-            key="moon"
-            name="lucide:moon"
-            v-else
-            class="text-text-high-contrast size-5"
-          />
-        </transition>
+        <ClientOnly>
+          <transition
+            enter-from-class="opacity-0"
+            enter-to-class="opacity-100"
+            enter-active-class="absolute w-full transition-opacity duration-200 ease-in-out"
+            leave-from-class="opacity-100"
+            leave-to-class="opacity-0"
+            leave-active-class="absolute w-full transition-opacity duration-200 ease-in-out"
+          >
+            <Icon
+              key="sun"
+              name="lucide:sun"
+              v-if="color.preference === 'dark'"
+              class="text-text-high-contrast size-5"
+            />
+            <Icon
+              key="moon"
+              name="lucide:moon"
+              v-else
+              class="text-text-high-contrast size-5"
+            />
+          </transition>
+        </ClientOnly>
       </button>
     </div>
     <nav class="px-3 md:px-5">

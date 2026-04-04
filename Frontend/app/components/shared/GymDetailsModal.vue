@@ -65,41 +65,43 @@
               </div>
             </div>
             <!-- Map Integration -->
-            <div
-              class="border border-border-subtle rounded-lg relative overflow-hidden w-full h-52 md:h-72 bg-component-bg shadow-md"
-            >
+            <ClientOnly>
               <div
-                v-if="isEmbedMapLoading"
-                class="absolute inset-0 flex items-center justify-center bg-component-bg rounded-lg"
+                class="border border-border-subtle rounded-lg relative overflow-hidden w-full h-52 md:h-72 bg-component-bg shadow-md"
               >
-                <div class="flex items-center gap-2">
-                  <Icon name="lucide:loader-2" class="animate-spin" />
-                  <p class="text-text-low-contrast">Loading map...</p>
+                <div
+                  v-if="isEmbedMapLoading"
+                  class="absolute inset-0 flex items-center justify-center bg-component-bg rounded-lg"
+                >
+                  <div class="flex items-center gap-2">
+                    <Icon name="lucide:loader-2" class="animate-spin" />
+                    <p class="text-text-low-contrast">Loading map...</p>
+                  </div>
                 </div>
-              </div>
-              <iframe
-                v-if="!useFallback"
-                :src="generateEmbedMapUrl(selectedGym)"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen="true"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                @load="onEmbedLoad"
-              ></iframe>
+                <iframe
+                  v-if="!useFallback"
+                  :src="generateEmbedMapUrl(selectedGym)"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen="true"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  @load="onEmbedLoad"
+                ></iframe>
 
-              <nuxt-img
-                v-else
-                :src="staticMapUrl"
-                :alt="`${selectedGym.name} map`"
-                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                loading="lazy"
-                decoding="async"
-                fetchpriority="low"
-                referrerpolicy="no-referrer-when-downgrade"
-              />
-            </div>
+                <nuxt-img
+                  v-else
+                  :src="staticMapUrl"
+                  :alt="`${selectedGym.name} map`"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  referrerpolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </ClientOnly>
             <!-- Image Gallery -->
             <div class="grid grid-cols-2 gap-3 md:gap-4">
               <div
@@ -174,7 +176,9 @@
                 <h1 class="text-lg font-semibold text-text-high-contrast">
                   Contact
                 </h1>
-                <div class="flex flex-col items-start justify-start gap-2 md:text-base text-sm">
+                <div
+                  class="flex flex-col items-start justify-start gap-2 md:text-base text-sm"
+                >
                   <div
                     v-if="selectedGym.contact_info.phone"
                     class="flex items-center gap-2 text-text-high-contrast"
