@@ -5,6 +5,13 @@
       "name": "Fitness Camp Gym",
       "barangay": "San Miguel",
       "address": "Junction 1 Center (between National Book Store and Honda Prestige), Bgy. San Miguel, Puerto Princesa, Philippines, 5300.",
+      "structuredAddress": {
+        "streetAddress": "Junction 1 Center (between National Book Store and Honda Prestige), Bgy. San Miguel",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7409549,
         "lng": 118.7430675
@@ -18,39 +25,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "06:00",
+          "closes": "21:00"
         },
         {
-          "day": "Tuesday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "06:00",
+          "closes": "21:00"
         },
         {
-          "day": "Wednesday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "06:00",
+          "closes": "21:00"
         },
         {
-          "day": "Thursday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "06:00",
+          "closes": "21:00"
         },
         {
-          "day": "Friday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "06:00",
+          "closes": "21:00"
         },
         {
-          "day": "Saturday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "06:00",
+          "closes": "21:00"
         },
         {
-          "day": "Sunday",
-          "time": "6:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "06:00",
+          "closes": "21:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/2vA7UZDJBK7SnWmNA",
@@ -69,6 +76,13 @@
       "name": "Ironworks Fitness Gym",
       "barangay": "Maunlad",
       "address": "102 Abad Santos Cor. Lacao Sts. Puerto Princesa CIty, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "102 Abad Santos Cor. Lacao Sts., Brgy. Maunlad",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7353433,
         "lng": 118.7396882
@@ -82,39 +96,34 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "6:30 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "06:30",
+          "closes": "21:00"
         },
         {
-          "day": "Tuesday",
-          "time": "6:30 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "06:30",
+          "closes": "21:00"
         },
         {
-          "day": "Wednesday",
-          "time": "6:30 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "06:30",
+          "closes": "21:00"
         },
         {
-          "day": "Thursday",
-          "time": "6:30 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "06:30",
+          "closes": "21:00"
         },
         {
-          "day": "Friday",
-          "time": "6:30 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "06:30",
+          "closes": "21:00"
         },
         {
-          "day": "Saturday",
-          "time": "6:30 AM",
-          "close": "9:00 PM"
-        },
-        {
-          "day": "Sunday",
-          "time": "Closed",
-          "close": "Closed"
+          "dayOfWeek": "Saturday",
+          "opens": "06:30",
+          "closes": "21:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/93SFFX7q4e16UG9X8",
@@ -133,6 +142,13 @@
       "name": "FusionFit Gym",
       "barangay": "San Manuel",
       "address": "L14 Blk 8 Kalayaan Homeowners' Association, San Manuel Road, Puerto Princesa City, 5300 Palawan.",
+      "structuredAddress": {
+        "streetAddress": "L14 Blk 8 Kalayaan Homeowners' Association, San Manuel Road",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7744726,
         "lng": 118.7619618
@@ -146,39 +162,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Monday",
+          "opens": "07:00",
+          "closes": "21:30"
         },
         {
-          "day": "Tuesday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "07:00",
+          "closes": "21:30"
         },
         {
-          "day": "Wednesday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "07:00",
+          "closes": "21:30"
         },
         {
-          "day": "Thursday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "07:00",
+          "closes": "21:30"
         },
         {
-          "day": "Friday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Friday",
+          "opens": "07:00",
+          "closes": "21:30"
         },
         {
-          "day": "Saturday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "07:00",
+          "closes": "21:30"
         },
         {
-          "day": "Sunday",
-          "time": "7:00 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "07:00",
+          "closes": "21:30"
         }
       ],
       "map_link": "https://maps.app.goo.gl/9UntA4juUyo4Jdwb9",
@@ -206,6 +222,13 @@
       "name": "Fitness Factor Palawan",
       "barangay": "Santa Monica",
       "address": "Reginio Avenue Cor. Rosal Street, Brgy. Santa Monica, Mountain View Zone 1, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "Reginio Avenue Cor. Rosal Street, Brgy. Santa Monica, Mountain View Zone 1",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7934645,
         "lng": 118.7301137
@@ -219,39 +242,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "7:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "07:00",
+          "closes": "21:00"
         },
         {
-          "day": "Tuesday",
-          "time": "7:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "07:00",
+          "closes": "21:00"
         },
         {
-          "day": "Wednesday",
-          "time": "7:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "07:00",
+          "closes": "21:00"
         },
         {
-          "day": "Thursday",
-          "time": "7:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "07:00",
+          "closes": "21:00"
         },
         {
-          "day": "Friday",
-          "time": "7:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "07:00",
+          "closes": "21:00"
         },
         {
-          "day": "Saturday",
-          "time": "7:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "07:00",
+          "closes": "21:00"
         },
         {
-          "day": "Sunday",
-          "time": "9:00 AM",
-          "close": "9:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "21:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/Br6ykZzQ8ZqBrXo5A",
@@ -271,6 +294,13 @@
       "name": "IronCore Fitness Gym",
       "barangay": "San Jose",
       "address": "St. Mary Covered Court, Makopa St., Brgy. San Jose, PPC, Palawan.",
+      "structuredAddress": {
+        "streetAddress": "St. Mary Covered Court, Makopa St., Brgy. San Jose",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7905142,
         "lng": 118.7517816
@@ -284,39 +314,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Monday",
+          "opens": "10:00",
+          "closes": "22:30"
         },
         {
-          "day": "Tuesday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "10:00",
+          "closes": "22:30"
         },
         {
-          "day": "Wednesday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "10:00",
+          "closes": "22:30"
         },
         {
-          "day": "Thursday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "10:00",
+          "closes": "22:30"
         },
         {
-          "day": "Friday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Friday",
+          "opens": "10:00",
+          "closes": "22:30"
         },
         {
-          "day": "Saturday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "22:30"
         },
         {
-          "day": "Sunday",
-          "time": "10:00 AM",
-          "close": "10:30 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "22:30"
         }
       ],
       "map_link": "https://maps.app.goo.gl/s8LZaDZppG5vDhuB8",
@@ -332,6 +362,13 @@
       "name": "Sunlight Gym and Bodyworks",
       "barangay": "Tagumpay",
       "address": "Malvar Street, Barangay Tagumpay, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "Malvar Street, Barangay Tagumpay",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7427164,
         "lng": 118.734288
@@ -345,39 +382,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Tuesday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Wednesday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Thursday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Friday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Saturday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Sunday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "08:00",
+          "closes": "20:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/Sj9mN9xvryVWBvLL8",
@@ -398,6 +435,13 @@
       "name": "Always Active Fitness",
       "barangay": "San Jose",
       "address": "Skytel, Commercial Building, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "Skytel Commercial Building, Brgy. San Jose",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7823744,
         "lng": 118.7482646
@@ -411,39 +455,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Tuesday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Wednesday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Thursday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Friday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Saturday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Sunday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "06:00",
+          "closes": "23:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/4h6SDuXdDhjoR2Z78",
@@ -463,7 +507,14 @@
       "id": "8",
       "name": "Seconds Fitness",
       "barangay": "Santa Monica",
-      "address": "2nd Floor, Paul Michael Warehouse, PME Compound, Barangay Sta. Monica, Puerto Princesa City, Puerto Princesa, Philippines.",
+      "address": "2nd Floor, Paul Michael Warehouse, PME Compound, Barangay Sta. Monica, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "2nd Floor, Paul Michael Warehouse, PME Compound, Barangay Sta. Monica",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7879739,
         "lng": 118.7378802
@@ -477,39 +528,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Tuesday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Wednesday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Thursday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Friday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Saturday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "06:00",
+          "closes": "23:00"
         },
         {
-          "day": "Sunday",
-          "time": "6:00 AM",
-          "close": "11:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "06:00",
+          "closes": "23:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/hcgZbBaUU2PAYndn7",
@@ -528,6 +579,13 @@
       "name": "Cuerpo Fitness Gym",
       "barangay": "Tiniguiban",
       "address": "PSU Road, Brgy. Tiniguiban, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "PSU Road, Brgy. Tiniguiban",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.778854,
         "lng": 118.735928
@@ -541,39 +599,34 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Tuesday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Wednesday",
-          "time": "3:00 PM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "15:00",
+          "closes": "20:00"
         },
         {
-          "day": "Thursday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Friday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Saturday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
-        },
-        {
-          "day": "Sunday",
-          "time": "Closed",
-          "close": "Closed"
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "20:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/31LrE9nTHSeE2ZVD8",
@@ -593,6 +646,13 @@
       "name": "XXL Gym Puerto Princesa",
       "barangay": "Sicsican",
       "address": "Dimalanta Road, Brgy. Sicsican, PPC.",
+      "structuredAddress": {
+        "streetAddress": "Dimalanta Road, Brgy. Sicsican",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7976912,
         "lng": 118.7128429
@@ -606,39 +666,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Monday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Tuesday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Wednesday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Thursday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Friday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Saturday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "20:00"
         },
         {
-          "day": "Sunday",
-          "time": "8:00 AM",
-          "close": "8:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "08:00",
+          "closes": "20:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/8ePsLkTvuqREXNh17",
@@ -655,6 +715,13 @@
       "name": "Island Punch Fitness",
       "barangay": "San Pedro",
       "address": "Kalikasan Homes Brgy Sanpedro, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "Kalikasan Homes, Brgy. San Pedro",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.753542,
         "lng": 118.7610548
@@ -668,39 +735,39 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "6:30 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Monday",
+          "opens": "06:30",
+          "closes": "21:30"
         },
         {
-          "day": "Tuesday",
-          "time": "6:30 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Tuesday",
+          "opens": "06:30",
+          "closes": "21:30"
         },
         {
-          "day": "Wednesday",
-          "time": "6:30 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Wednesday",
+          "opens": "06:30",
+          "closes": "21:30"
         },
         {
-          "day": "Thursday",
-          "time": "6:30 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "06:30",
+          "closes": "21:30"
         },
         {
-          "day": "Friday",
-          "time": "6:30 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Friday",
+          "opens": "06:30",
+          "closes": "21:30"
         },
         {
-          "day": "Saturday",
-          "time": "6:30 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "06:30",
+          "closes": "21:30"
         },
         {
-          "day": "Sunday",
-          "time": "7:00 AM",
-          "close": "5:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "07:00",
+          "closes": "17:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/rcGP6Q84PEiKaY4M7",
@@ -720,6 +787,13 @@
       "name": "Mizar Fitness Gym",
       "barangay": "San Miguel",
       "address": "PPVR+R3J, Puerto Princesa City, Palawan.",
+      "structuredAddress": {
+        "streetAddress": "PPVR+R3J, Brgy. San Miguel",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7445904,
         "lng": 118.7401395
@@ -736,6 +810,13 @@
       "name": "Cold One Gym",
       "barangay": "Maunlad",
       "address": "Mabini Street, Brgy. Maunlad, PPC @ the back of Melvicris Water Refilling Station, Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "Mabini Street, Brgy. Maunlad (at the back of Melvicris Water Refilling Station)",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7331943,
         "lng": 118.7396255
@@ -749,7 +830,39 @@
       ],
       "opening_hours": [
         {
-          "time": "Always Open"
+          "dayOfWeek": "Monday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Saturday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "24:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/7GrMcNJ9BjxiH2Lu6",
@@ -768,6 +881,13 @@
       "name": "Palmetcon Fitness",
       "barangay": "San Miguel",
       "address": "P. Vicente St, San Miguel, Puerto Princesa City, 5300 Palawan.",
+      "structuredAddress": {
+        "streetAddress": "P. Vicente St., Brgy. San Miguel",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7412364,
         "lng": 118.7426957
@@ -781,7 +901,39 @@
       ],
       "opening_hours": [
         {
-          "time": "Always Open"
+          "dayOfWeek": "Monday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Saturday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "24:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/GzNB8AjW6WdXEmHN8",
@@ -797,6 +949,13 @@
       "name": "Ground Zero Fitness Gym",
       "barangay": "San Miguel",
       "address": "Malvar Street (Behind GearSpot), Puerto Princesa, Philippines.",
+      "structuredAddress": {
+        "streetAddress": "Malvar Street (Behind GearSpot), Brgy. San Miguel",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7435627,
         "lng": 118.7387411
@@ -810,7 +969,39 @@
       ],
       "opening_hours": [
         {
-          "time": "Always Open"
+          "dayOfWeek": "Monday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Saturday",
+          "opens": "00:00",
+          "closes": "24:00"
+        },
+        {
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "24:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/GzNB8AjW6WdXEmHN8",
@@ -826,6 +1017,13 @@
       "name": "Palawan Jiu Jitsu BJJ",
       "barangay": "Sicsican",
       "address": "Seven Dragons Gym Husky Cafe Sicsican, Puerto Princesa, Philippines",
+      "structuredAddress": {
+        "streetAddress": "Seven Dragons Gym, Husky Cafe, Brgy. Sicsican",
+        "addressLocality": "Puerto Princesa",
+        "addressRegion": "Palawan",
+        "postalCode": "5300",
+        "addressCountry": "PH"
+      },
       "location": {
         "lat": 9.7988609,
         "lng": 118.7125788
@@ -839,39 +1037,29 @@
       ],
       "opening_hours": [
         {
-          "day": "Monday",
-          "time": "Closed",
-          "close": "Closed"
+          "dayOfWeek": "Tuesday",
+          "opens": "07:20",
+          "closes": "21:30"
         },
         {
-          "day": "Tuesday",
-          "time": "7:20 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Thursday",
+          "opens": "07:20",
+          "closes": "21:30"
         },
         {
-          "day": "Wednesday",
-          "time": "Closed",
-          "close": "Closed"
+          "dayOfWeek": "Friday",
+          "opens": "03:00",
+          "closes": "17:00"
         },
         {
-          "day": "Thursday",
-          "time": "7:20 AM",
-          "close": "9:30 PM"
+          "dayOfWeek": "Saturday",
+          "opens": "06:00",
+          "closes": "20:00"
         },
         {
-          "day": "Friday",
-          "time": "3:00 AM",
-          "close": "5:00 PM"
-        },
-        {
-          "day": "Saturday",
-          "time": "6:00 AM",
-          "close": "8:00 PM"
-        },
-        {
-          "day": "Sunday",
-          "time": "5:00 PM",
-          "close": "7:00 PM"
+          "dayOfWeek": "Sunday",
+          "opens": "17:00",
+          "closes": "19:00"
         }
       ],
       "map_link": "https://maps.app.goo.gl/q9m6bfotAKkXtCne9",

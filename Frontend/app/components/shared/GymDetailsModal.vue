@@ -127,7 +127,21 @@
                   Opening Hours
                 </h1>
 
-                <div class="flex flex-col items-start justify-start gap-2">
+                <div
+                  v-if="isAlwaysOpen"
+                  class="flex items-center gap-2 text-text-low-contrast"
+                >
+                  <Icon
+                    name="lucide:clock-check"
+                    class="shrink-0 text-text-accent-low"
+                  />
+                  <span>Open 24 Hours</span>
+                </div>
+
+                <div
+                  v-else
+                  class="flex flex-col items-start justify-start gap-2"
+                >
                   <template
                     v-for="(hours, index) in selectedGym.opening_hours"
                     :key="index"
@@ -138,31 +152,13 @@
                       >
                         <li
                           class="font-semibold w-32 text-text-high-contrast"
-                          v-if="hours.day"
+                          v-if="hours.dayOfWeek"
                         >
-                          {{ hours.day }}
+                          {{ hours.dayOfWeek }}
                         </li>
-                        <li
-                          v-if="hours.time === 'Always Open'"
-                          class="flex items-center gap-2"
-                        >
-                          <Icon
-                            name="lucide:clock-check"
-                            class="shrink-0 text-text-accent-low"
-                          />
-                          <p class="text-text-low-contrast">Always Open</p>
-                        </li>
-                        <li
-                          v-else-if="hours.time === 'Closed'"
-                          class="text-text-low-contrast"
-                        >
-                          Closed
-                        </li>
-                        <li
-                          v-else
-                          class="text-text-low-contrast md:text-base text-sm"
-                        >
-                          {{ hours.time }} - {{ hours.close }}
+                        <li class="text-text-low-contrast md:text-base text-sm">
+                          {{ format12h(hours.opens) }} –
+                          {{ format12h(hours.closes) }}
                         </li>
                       </ul>
                     </div>
@@ -266,6 +262,13 @@ const socialLinkLabelPrefix = computed(() =>
   selectedGym.value?.social_links?.length === 1 ? "Social" : "Socials",
 );
 
+const isAlwaysOpen = computed(
+  () =>
+    selectedGym.value?.opening_hours?.every(
+      (h) => h.opens === "00:00" && h.closes === "24:00",
+    ) ?? false,
+);
+
 const MAX_CACHE_SIZE = 50;
 const mapUrlCache = new Map<string, string>();
 
@@ -352,6 +355,16 @@ function openImageviewer(ImageUrl: string) {
 
 function closeImageViewer() {
   isImageViewerOpen.value = false;
+}
+
+function format12h(time24: string): string {
+  if (time24 === "24:00") return "12:00 AM";
+  const [hStr, mStr] = time24.split(":");
+  const h = parseInt(hStr!);
+  const m = parseInt(mStr!);
+  const ampm = h >= 12 ? "PM" : "AM";
+  const hour = h % 12 === 0 ? 12 : h % 12;
+  return `${hour}:${m.toString().padStart(2, "0")} ${ampm}`;
 }
 </script>
 <style scoped>
