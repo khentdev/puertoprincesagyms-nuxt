@@ -15,7 +15,6 @@
   <NuxtPage />
 </template>
 <script lang="ts" setup>
-import type { ValidBarangays } from "~/store";
 definePageMeta({
   layout: "default",
   name: "barangay",
@@ -43,6 +42,7 @@ definePageMeta({
   },
 });
 
+const route = useRoute();
 const gymStore = useGymStore();
 const { filteredGyms } = storeToRefs(gymStore);
 
@@ -53,4 +53,39 @@ const handleOpenModal = (gym: GymCardData) => {
     params: { gymSlug: titleCaseToKebab(gym.name) },
   });
 };
+
+watch(
+  () => route.params["gymSlug"] as string,
+  (gymSlugParams) => {
+    if (gymSlugParams) {
+      const gym = gymStore.gyms.find(
+        (gym) => titleCaseToKebab(gym.name) === gymSlugParams,
+      );
+      if (gym) gymStore.setSelectedGym(gym);
+    }
+  },
+  { immediate: true },
+);
+
+const titleCaseBarangay = computed(() =>
+  kebabToTitleCase(gymStore.selectedBarangay),
+);
+
+const seoTitle = computed(
+  () =>
+    `Gyms in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan - Find Fitness Centers`,
+);
+const seoDescription = computed(
+  () =>
+    `Discover gyms in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan. Browse fitness centers by location with Google Maps directions for easy navigation`,
+);
+
+// TODO: Add ogImage, twitterImage, etc. later
+useSeoMeta({
+  title: () => seoTitle.value,
+  description: () => seoDescription.value,
+  twitterTitle: () => seoTitle.value,
+  twitterDescription: () => seoDescription.value,
+  robots: "index, follow",
+});
 </script>

@@ -26,6 +26,7 @@ definePageMeta({
 });
 const route = useRoute();
 const gymStore = useGymStore();
+const { selectedGym } = storeToRefs(gymStore);
 const { closeSelectedGym } = gymStore;
 
 const handleCloseGymDetailsModal = () => {
@@ -35,4 +36,31 @@ const handleCloseGymDetailsModal = () => {
     params: { barangayName: route.params["barangayName"] as ValidBarangays },
   });
 };
+
+const gymSlug = computed(() => route.params["gymSlug"] as string);
+const gymSlugToTitleCase = computed(() => kebabToTitleCase(gymSlug.value));
+const titleCaseBarangay = computed(() =>
+  kebabToTitleCase(gymStore.selectedBarangay),
+);
+
+const seoTitle = computed(
+  () =>
+    `${gymSlugToTitleCase.value} - Gym in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan`,
+);
+const seoDescription = computed(
+  () =>
+    `Visit ${gymSlugToTitleCase.value} in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan. View Location, opening hours, contact details, and get directions via Google Maps`,
+);
+
+useSeoMeta({
+  title: () => seoTitle.value,
+  description: () => seoDescription.value,
+  twitterTitle: () => seoTitle.value,
+  twitterDescription: () => seoDescription.value,
+  ogImage: () => selectedGym.value?.profile_image,
+  ogImageAlt: () => selectedGym.value?.name,
+  twitterImage: () => selectedGym.value?.profile_image,
+  twitterImageAlt: () => selectedGym.value?.name,
+  robots: "index, follow",
+});
 </script>

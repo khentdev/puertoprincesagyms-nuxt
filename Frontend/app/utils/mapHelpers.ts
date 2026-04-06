@@ -12,11 +12,12 @@ export function generateStaticMapUrl(
     gym: GymV2,
     options: StaticMapOptions = {}
 ): string {
+    const { staticMap, apiKey } = MAPS_CONFIG()
     const {
-        width = MAPS_CONFIG.staticMap.defaultSize.width,
-        height = MAPS_CONFIG.staticMap.defaultSize.height,
-        zoom = MAPS_CONFIG.staticMap.defaultZoom,
-        markerColor = MAPS_CONFIG.staticMap.markerColor,
+        width = staticMap.defaultSize.width,
+        height = staticMap.defaultSize.height,
+        zoom = staticMap.defaultZoom,
+        markerColor = staticMap.markerColor,
         scale = 2,
         maptype = "hybrid",
     } = options
@@ -31,10 +32,10 @@ export function generateStaticMapUrl(
         maptype,
         markers: `color:${markerColor}|label:${markerLabel}|${lat},${lng}`,
         scale: scale.toString(),
-        key: MAPS_CONFIG.apiKey,
+        key: apiKey,
     })
 
-    return `${MAPS_CONFIG.staticMap.baseUrl}?${params.toString()}`
+    return `${staticMap.baseUrl}?${params.toString()}`
 }
 
 export function generateEmbedMapUrl(gym: GymV2): string {

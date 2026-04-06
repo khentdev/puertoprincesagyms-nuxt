@@ -5,32 +5,41 @@
     <div
       class="flex-1 max-h-[60vh] h-[60vh] bg-component-bg rounded-lg overflow-hidden"
     >
-      <google-map
-        ref="mapRef"
-        :api-key="config.public.googleMapsApiKey"
-        style="width: 100%; height: 100%"
-        :center="ppcCenter"
-        :zoom="15"
-        :map-id="config.public.googleMapsMapId"
-      >
-        <marker-cluster :options="{ renderer: clusterRenderer() }">
-          <custom-marker
-            v-for="gym in filteredGyms"
-            :key="gym.id"
-            :options="{
-              position: { lat: gym.location.lat, lng: gym.location.lng },
-              title: gym.name,
-            }"
+      <ClientOnly>
+        <google-map
+          ref="mapRef"
+          :api-key="config.public.googleMapsApiKey"
+          style="width: 100%; height: 100%"
+          :center="ppcCenter"
+          :zoom="15"
+          :map-id="config.public.googleMapsMapId"
+        >
+          <marker-cluster :options="{ renderer: clusterRenderer() }">
+            <custom-marker
+              v-for="gym in filteredGyms"
+              :key="gym.id"
+              :options="{
+                position: { lat: gym.location.lat, lng: gym.location.lng },
+                title: gym.name,
+              }"
+            >
+              <custom-map-marker
+                :gym-name="gym.name"
+                :gym-id="gym.id"
+                :barangay-name="gym.barangay"
+                @open-modal="handleOpenModal"
+              />
+            </custom-marker>
+          </marker-cluster>
+        </google-map>
+        <template #fallback>
+          <div
+            class="w-full h-full flex items-center justify-center text-text-low-contrast text-sm"
           >
-            <custom-map-marker
-              :gym-name="gym.name"
-              :gym-id="gym.id"
-              :barangay-name="gym.barangay"
-              @open-modal="handleOpenModal"
-            />
-          </custom-marker>
-        </marker-cluster>
-      </google-map>
+            Loading map…
+          </div>
+        </template>
+      </ClientOnly>
     </div>
     <shared-header-title />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -114,4 +123,17 @@ function clusterRenderer() {
     },
   };
 }
+const seoTitle =
+  "Gyms in Puerto Princesa City, Palawan - Complete Fitness Directory";
+const seoDescription =
+  "Discover gyms across Puerto Princesa City, Palawan. Browse by barangay with Google Maps directions and find the best local fitness centers";
+
+// TODO: Add ogImage, twitterImage, etc. later
+useSeoMeta({
+  title: seoTitle,
+  description: seoDescription,
+  twitterTitle: seoTitle,
+  twitterDescription: seoDescription,
+  robots: "index, follow",
+});
 </script>
