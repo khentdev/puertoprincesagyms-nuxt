@@ -11,7 +11,9 @@ const DEFAULT_SORT: SortOption = {
 export const useGymStore = defineStore("gymStore", () => {
     const gyms = ref<GymV2[]>(gymsJson.gyms as GymV2[])
 
-    const selectedBarangay = useStorage<Barangays>("selectedBarangay", "All Locations")
+    const selectedBarangay = useCookie<Barangays>("selectedBarangay", {
+        default: () => "All Locations",
+    })
     const setSelectedBarangay = (barangay: Barangays) => {
         selectedBarangay.value = barangay
     }
@@ -55,7 +57,9 @@ export const useGymStore = defineStore("gymStore", () => {
         selectedGym.value = null
     }
 
-    const selectedSort = useStorage<SortOption>("selectedSort", DEFAULT_SORT)
+    const selectedSort = useCookie<SortOption>("selectedSort", {
+        default: () => DEFAULT_SORT,
+    })
     const setSelectedSort = (sort: SortOption) => {
         selectedSort.value = sort
     }
