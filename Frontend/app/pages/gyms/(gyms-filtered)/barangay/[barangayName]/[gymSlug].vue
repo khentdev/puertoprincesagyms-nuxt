@@ -39,9 +39,7 @@ const handleCloseGymDetailsModal = () => {
 
 const gymSlug = computed(() => route.params["gymSlug"] as string);
 const gymSlugToTitleCase = computed(() => kebabToTitleCase(gymSlug.value));
-const titleCaseBarangay = computed(() =>
-  kebabToTitleCase(gymStore.selectedBarangay),
-);
+const titleCaseBarangay = computed(() => gymStore.selectedBarangay);
 
 const seoTitle = computed(
   () =>
@@ -63,4 +61,61 @@ useSeoMeta({
   twitterImageAlt: () => selectedGym.value?.name,
   robots: "index, follow",
 });
+
+const currentUrl = useRequestURL().href;
+useSchemaOrg([
+  defineLocalBusiness({
+    "@type": "SportsActivityLocation",
+    name: () => selectedGym.value?.name,
+    "@id": () => selectedGym.value?.id,
+    image: () => selectedGym.value?.profile_image,
+    url: () =>
+      selectedGym.value?.social_links?.find((s) => s.name === "website")
+        ?.link || currentUrl,
+    description: () =>
+      `${selectedGym.value?.name} in ${selectedGym.value?.barangay}, Puerto Princesa City.`,
+    telephone: () => selectedGym.value?.contact_info?.phone,
+    email: () => selectedGym.value?.contact_info?.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: () => selectedGym.value?.structuredAddress?.streetAddress,
+      addressLocality: () =>
+        selectedGym.value?.structuredAddress?.addressLocality,
+      addressRegion: () => selectedGym.value?.structuredAddress?.addressRegion,
+      postalCode: () => selectedGym.value?.structuredAddress?.postalCode,
+      addressCountry: () =>
+        selectedGym.value?.structuredAddress?.addressCountry,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: () => selectedGym.value?.location?.lat,
+      longitude: () => selectedGym.value?.location?.lng,
+    },
+    openingHoursSpecification: () => {
+      const hours = selectedGym.value?.opening_hours;
+      if (!hours) return undefined;
+
+      const isAlwaysOpen = hours.every(
+        (h) => h.opens === "00:00" && h.closes === "24:00",
+      );
+
+      if (isAlwaysOpen)
+        return [
+          {
+            "@type": "OpeningHoursSpecification" as const,
+            dayOfWeek: hours.map((h) => h.dayOfWeek),
+            opens: "00:00",
+            closes: "24:00",
+          },
+        ];
+
+      return hours.map((h) => ({
+        "@type": "OpeningHoursSpecification" as const,
+        dayOfWeek: h.dayOfWeek,
+        opens: h.opens,
+        closes: h.closes,
+      }));
+    },
+  }),
+]);
 </script>

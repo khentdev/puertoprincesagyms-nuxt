@@ -88,4 +88,66 @@ useSeoMeta({
   twitterDescription: () => seoDescription.value,
   robots: "index, follow",
 });
+
+const origin = useRequestURL().origin;
+useSchemaOrg([
+  defineWebPage({
+    "@type": "CollectionPage",
+    name: () => titleCaseBarangay.value,
+    description: () => seoDescription.value,
+  }),
+  defineBreadcrumb({
+    itemListElement: () => {
+      const breadCrumbs = [
+        { name: "Home", item: "/" },
+        { name: "All Gyms", item: "/gyms" },
+        {
+          name: titleCaseBarangay.value,
+          item: `/gyms/barangay/${titleCaseToKebab(gymStore.selectedBarangay)}`,
+        },
+      ];
+      if (route.params.gymSlug) {
+        breadCrumbs.push({
+          name: kebabToTitleCase(route.params.gymSlug as string),
+          item: route.path,
+        });
+      }
+      return breadCrumbs;
+    },
+  }),
+  ...(!(route.params["gymSlug"] as string)
+    ? [
+        defineItemList({
+          "@type": "ItemList",
+          itemListElement: () =>
+            filteredGyms.value?.map((g, i) => {
+              const barangaySlug = titleCaseToKebab(g.barangay);
+              const gymSlug = titleCaseToKebab(g.name);
+              const gymUrl = `${origin}/gyms/barangay/${barangaySlug}/${gymSlug}`;
+
+              return {
+                "@type": "ListItem",
+                position: i + 1,
+                item: {
+                  "@type": "LocalBusiness",
+                  name: g.name,
+                  url: gymUrl,
+                  image: g.profile_image,
+                  description: `${g.name} in ${g.barangay}, Puerto Princesa City, Palawan`,
+                  telephone: g.contact_info?.phone,
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: g.structuredAddress?.streetAddress,
+                    addressLocality: g.structuredAddress?.addressLocality,
+                    addressRegion: g.structuredAddress?.addressRegion,
+                    postalCode: g.structuredAddress?.postalCode,
+                    addressCountry: g.structuredAddress?.addressCountry,
+                  },
+                },
+              };
+            }),
+        }),
+      ]
+    : []),
+]);
 </script>
