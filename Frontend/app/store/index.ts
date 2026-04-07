@@ -1,8 +1,17 @@
+export interface StructuredAddress {
+    streetAddress: string
+    addressLocality: string
+    addressRegion: string
+    postalCode: string
+    addressCountry: string
+}
+
 export interface Gym {
     id: string
     name: string
     barangay: ValidBarangays
     address: string
+    structuredAddress?: StructuredAddress
     location: {
         lat: number
         lng: number
@@ -15,9 +24,9 @@ export interface Gym {
 export interface GymV2 extends Gym {
     gym_description?: string
     opening_hours?: readonly {
-        readonly day: string
-        readonly time: string
-        readonly close: string
+        readonly dayOfWeek: string
+        readonly opens: string
+        readonly closes: string
     }[]
     social_links?: readonly {
         readonly name: string

@@ -136,4 +136,54 @@ useSeoMeta({
   twitterDescription: seoDescription,
   robots: "index, follow",
 });
+const origin = useRequestURL().origin;
+useSchemaOrg([
+  defineWebPage({
+    "@type": "CollectionPage",
+    name: seoTitle,
+    description: seoDescription,
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      {
+        name: "Home",
+        item: "/",
+      },
+      {
+        name: "All Gyms",
+        item: "/gyms",
+      },
+    ],
+  }),
+  defineItemList({
+    "@type": "ItemList",
+    itemListElement: () =>
+      filteredGyms.value?.map((g, i) => {
+        const barangaySlug = titleCaseToKebab(g.barangay);
+        const gymSlug = titleCaseToKebab(g.name);
+        const gymUrl = `${origin}/gyms/barangay/${barangaySlug}/${gymSlug}`;
+
+        return {
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "LocalBusiness",
+            name: g.name,
+            url: gymUrl,
+            image: g.profile_image,
+            description: `${g.name} in ${g.barangay}, Puerto Princesa City, Palawan`,
+            telephone: g.contact_info?.phone,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: g.structuredAddress?.streetAddress,
+              addressLocality: g.structuredAddress?.addressLocality,
+              addressRegion: g.structuredAddress?.addressRegion,
+              postalCode: g.structuredAddress?.postalCode,
+              addressCountry: g.structuredAddress?.addressCountry,
+            },
+          },
+        };
+      }),
+  }),
+]);
 </script>
