@@ -62,7 +62,8 @@ useSeoMeta({
   robots: "index, follow",
 });
 
-const currentUrl = useRequestURL().href;
+const config = useRuntimeConfig();
+const currentUrl = `${config.public.siteUrl}${route.path}`;
 useSchemaOrg([
   defineLocalBusiness({
     "@type": "SportsActivityLocation",

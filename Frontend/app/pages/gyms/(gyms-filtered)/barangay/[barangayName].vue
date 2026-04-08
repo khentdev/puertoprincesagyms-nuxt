@@ -89,7 +89,8 @@ useSeoMeta({
   robots: "index, follow",
 });
 
-const origin = useRequestURL().origin;
+const config = useRuntimeConfig();
+const origin = config.public.siteUrl;
 useSchemaOrg([
   defineWebPage({
     "@type": "CollectionPage",
