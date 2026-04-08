@@ -3,7 +3,7 @@
     <div class="w-full flex justify-between items-center px-3 md:px-5 py-2.5">
       <div class="flex items-center w-full gap-3">
         <NuxtImg
-          src="./ppcgymslogo.png"
+          src="/ppcgymslogo.png"
           alt="Puerto Princesa Gyms Directory Logo"
           class="rounded-full h-8 hidden sm:h-10 sm:block md:h-12"
         ></NuxtImg>
