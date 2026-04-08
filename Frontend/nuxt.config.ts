@@ -23,8 +23,11 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    urls: getDynamicRoutes()
+    urls: getDynamicRoutes(),
+    zeroRuntime: true
   },
+
+
 
   modules: [
     '@pinia/nuxt',
