@@ -55,10 +55,6 @@ useSeoMeta({
   description: () => seoDescription.value,
   twitterTitle: () => seoTitle.value,
   twitterDescription: () => seoDescription.value,
-  ogImage: () => selectedGym.value?.profile_image,
-  ogImageAlt: () => selectedGym.value?.name,
-  twitterImage: () => selectedGym.value?.profile_image,
-  twitterImageAlt: () => selectedGym.value?.name,
   robots: "index, follow",
 });
 

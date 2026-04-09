@@ -187,5 +187,8 @@ useSchemaOrg([
   }),
 ]);
 
-defineOgImage("GymDirectory.takumi");
+defineOgImage("GymDirectory.takumi", {
+  title: "Looking for Gyms in Puerto Princesa?",
+  description: "Find and compare the best gyms near you — all in one place.",
+});
 </script>
