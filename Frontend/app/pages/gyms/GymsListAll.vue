@@ -124,7 +124,7 @@ function clusterRenderer() {
   };
 }
 const seoTitle =
-  "Gyms in Puerto Princesa City, Palawan - Complete Fitness Directory";
+  "Gyms in Puerto Princesa City, Palawan — Complete Fitness Directory";
 const seoDescription =
   "Discover gyms across Puerto Princesa City, Palawan. Browse by barangay with Google Maps directions and find the best local fitness centers";
 
@@ -186,4 +186,6 @@ useSchemaOrg([
       }),
   }),
 ]);
+
+defineOgImage("GymDirectory.takumi");
 </script>

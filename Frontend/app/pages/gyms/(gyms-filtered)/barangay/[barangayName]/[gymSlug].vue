@@ -43,7 +43,7 @@ const titleCaseBarangay = computed(() => gymStore.selectedBarangay);
 
 const seoTitle = computed(
   () =>
-    `${gymSlugToTitleCase.value} - Gym in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan`,
+    `${gymSlugToTitleCase.value} — Gym in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan`,
 );
 const seoDescription = computed(
   () =>
@@ -119,4 +119,9 @@ useSchemaOrg([
     },
   }),
 ]);
+
+defineOgImage("GymDirectory.takumi", {
+  title: `${gymSlugToTitleCase.value} — ${titleCaseBarangay.value}, Puerto Princesa`,
+  description: `View photos, location, hours, and details for ${gymSlugToTitleCase.value}. Get directions and explore nearby gyms in one place.`,
+});
 </script>
