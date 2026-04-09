@@ -151,4 +151,18 @@ useSchemaOrg([
       ]
     : []),
 ]);
+
+watch(
+  () => route.params["gymSlug"] as string,
+  (newVal) => {
+    if (!newVal) {
+      defineOgImage("GymDirectory.takumi", {
+        title: `Looking for Gyms in ${titleCaseBarangay.value}, Puerto Princesa?`,
+        description:
+          "Find and compare the best gyms near you — all in one place.",
+      });
+    }
+  },
+  { immediate: true },
+);
 </script>

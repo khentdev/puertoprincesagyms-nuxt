@@ -26,7 +26,9 @@ export default defineNuxtConfig({
     urls: getDynamicRoutes(),
     zeroRuntime: true
   },
-
+  ogImage: {
+    zeroRuntime: true
+  },
 
 
   modules: [
@@ -39,6 +41,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     '@nuxtjs/seo',
+    'nuxt-og-image',
   ],
 
   imports: {
