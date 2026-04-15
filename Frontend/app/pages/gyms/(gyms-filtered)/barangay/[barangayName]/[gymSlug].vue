@@ -59,7 +59,17 @@ useSeoMeta({
 });
 
 const config = useRuntimeConfig();
-const currentUrl = `${config.public.siteUrl}${route.path}`;
+const currentUrl = computed(()=>`${config.public.siteUrl}${route.path}`)
+
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: () => currentUrl.value,
+    },
+  ],
+});
+
 useSchemaOrg([
   defineLocalBusiness({
     "@type": "SportsActivityLocation",
@@ -68,7 +78,7 @@ useSchemaOrg([
     image: () => selectedGym.value?.profile_image,
     url: () =>
       selectedGym.value?.social_links?.find((s) => s.name === "website")
-        ?.link || currentUrl,
+        ?.link || currentUrl.value,
     description: () =>
       `${selectedGym.value?.name} in ${selectedGym.value?.barangay}, Puerto Princesa City.`,
     telephone: () => selectedGym.value?.contact_info?.phone,

@@ -90,6 +90,14 @@ useSeoMeta({
 });
 
 const config = useRuntimeConfig();
+const currentUrl = computed(() => `${config.public.siteUrl}${route.path}`)
+
+useHead({
+  link:[{
+    rel:"canonical",href:()=> currentUrl.value
+  }]
+})
+
 const origin = config.public.siteUrl;
 useSchemaOrg([
   defineWebPage({
