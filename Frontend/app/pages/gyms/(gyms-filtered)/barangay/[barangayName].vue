@@ -80,7 +80,6 @@ const seoDescription = computed(
     `Discover gyms in ${titleCaseBarangay.value}, Puerto Princesa City, Palawan. Browse fitness centers by location with Google Maps directions for easy navigation`,
 );
 
-// TODO: Add ogImage, twitterImage, etc. later
 useSeoMeta({
   title: () => seoTitle.value,
   description: () => seoDescription.value,

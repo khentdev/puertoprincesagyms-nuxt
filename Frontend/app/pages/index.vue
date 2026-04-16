@@ -4,4 +4,5 @@ definePageMeta({
   layout: "default",
   redirect: { name: "gyms-list-all" },
 });
+
 </script>

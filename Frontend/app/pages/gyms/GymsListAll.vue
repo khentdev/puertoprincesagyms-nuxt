@@ -128,7 +128,6 @@ const seoTitle =
 const seoDescription =
   "Discover gyms across Puerto Princesa City, Palawan. Browse by barangay with Google Maps directions and find the best local fitness centers";
 
-// TODO: Add ogImage, twitterImage, etc. later
 useSeoMeta({
   title: seoTitle,
   description: seoDescription,
@@ -136,7 +135,13 @@ useSeoMeta({
   twitterDescription: seoDescription,
   robots: "index, follow",
 });
+
 const origin = config.public.siteUrl;
+
+useHead({
+  link: [{ rel: "canonical", href: `${origin}/gyms` }],
+});
+
 useSchemaOrg([
   defineWebPage({
     "@type": "CollectionPage",
