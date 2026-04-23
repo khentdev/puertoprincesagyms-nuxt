@@ -107,17 +107,17 @@ useSchemaOrg([
   defineBreadcrumb({
     itemListElement: () => {
       const breadCrumbs = [
-        { name: "Home", item: "/" },
-        { name: "All Gyms", item: "/gyms" },
+        { name: "Home", item: origin },
+        { name: "Gyms", item: `${origin}/gyms` },
         {
           name: titleCaseBarangay.value,
-          item: `/gyms/barangay/${titleCaseToKebab(gymStore.selectedBarangay)}`,
+          item: `${origin}/gyms/barangay/${titleCaseToKebab(gymStore.selectedBarangay)}`,
         },
       ];
       if (route.params.gymSlug) {
         breadCrumbs.push({
           name: kebabToTitleCase(route.params.gymSlug as string),
-          item: route.path,
+          item: `${origin}${route.path}`,
         });
       }
       return breadCrumbs;

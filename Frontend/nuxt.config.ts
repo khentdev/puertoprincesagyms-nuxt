@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     name: 'Puerto Princesa Gyms',
   },
 
+  routeRules: {
+    "/": { redirect: { to: "/gyms", statusCode: 301 } }
+  },
+
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   experimental: {

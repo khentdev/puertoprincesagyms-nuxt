@@ -152,11 +152,11 @@ useSchemaOrg([
     itemListElement: [
       {
         name: "Home",
-        item: "/",
+        item: origin,
       },
       {
-        name: "All Gyms",
-        item: "/gyms",
+        name: "Gyms",
+        item: `${origin}/gyms`,
       },
     ],
   }),
