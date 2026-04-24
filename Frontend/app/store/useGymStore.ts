@@ -1,5 +1,5 @@
-import { useStorage } from "@vueuse/core";
 import gymsJson from "../data/gyms.json";
+import { skipHydrate } from "pinia";
 import type { Barangays, GymV2, SortOption } from "./";
 
 const DEFAULT_SORT: SortOption = {
@@ -11,9 +11,7 @@ const DEFAULT_SORT: SortOption = {
 export const useGymStore = defineStore("gymStore", () => {
     const gyms = ref<GymV2[]>(gymsJson.gyms as GymV2[])
 
-    const selectedBarangay = useCookie<Barangays>("selectedBarangay", {
-        default: () => "All Locations",
-    })
+    const selectedBarangay = skipHydrate(useLocalStorage<Barangays>("selectedBarangay", "All Locations"))
     const setSelectedBarangay = (barangay: Barangays) => {
         selectedBarangay.value = barangay
     }
@@ -57,9 +55,7 @@ export const useGymStore = defineStore("gymStore", () => {
         selectedGym.value = null
     }
 
-    const selectedSort = useCookie<SortOption>("selectedSort", {
-        default: () => DEFAULT_SORT,
-    })
+    const selectedSort = skipHydrate(useLocalStorage<SortOption>("selectedSort", DEFAULT_SORT))
     const setSelectedSort = (sort: SortOption) => {
         selectedSort.value = sort
     }

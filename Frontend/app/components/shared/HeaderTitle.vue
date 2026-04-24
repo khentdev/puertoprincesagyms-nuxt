@@ -12,7 +12,7 @@
         getGymCountLabel
       }}</span>
     </div>
-      <div
+    <div
       class="flex items-center justify-start gap-3 md:justify-center mt-10 md:mt-auto shrink-0"
     >
       <span class="text-xs sm:text-sm text-text-low-contrast">Sort By:</span>
@@ -24,7 +24,8 @@
           <span class="text-xs sm:text-sm text-text-low-contrast">{{
             selectedSort.label
           }}</span>
-          <Icon name="lucide:chevron-down"
+          <Icon
+            name="lucide:chevron-down"
             class="size-4 text-text-low-contrast transition-transform duration-200"
             :class="{ 'rotate-180': isSortDropdownOpen }"
           />
@@ -57,7 +58,8 @@
             >
               <div class="flex items-center justify-between">
                 <span>{{ option.label }}</span>
-                <Icon name="lucide:check"
+                <Icon
+                  name="lucide:check"
                   v-if="
                     selectedSort.key === option.key &&
                     selectedSort.order === option.order
@@ -123,13 +125,17 @@ const handleSelectSort = (sort: SortOption) => {
   isSortDropdownOpen.value = false;
 };
 
-watch(selectedBarangay, (_, oldVal) => {
-  if (oldVal === "All Locations") {
-    gymStore.setSelectedSort({
-      label: "Name (A-Z)",
-      key: "name",
-      order: "asc",
-    });
-  }
-});
+watch(
+  selectedBarangay,
+  (newVal) => {
+    if (newVal !== "All Locations" && selectedSort.value.key === "barangay") {
+      gymStore.setSelectedSort({
+        label: "Name (A-Z)",
+        key: "name",
+        order: "asc",
+      });
+    }
+  },
+  { flush: "post" },
+);
 </script>
