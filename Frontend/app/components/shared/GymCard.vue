@@ -4,14 +4,17 @@
     class="flex flex-col h-full bg-bg-panel border cursor-pointer group border-border-subtle rounded-lg transition-all overflow-hidden duration-200 hover:border-border-strong hover:shadow-lg"
   >
     <div class="aspect-video w-full bg-component-bg relative overflow-hidden">
-      <nuxt-img
-        :src="gym.profile_image"
-        :alt="gym.name"
-        decoding="async"
-        fetchpriority="low"
-        class="w-full h-full object-cover rounded-t-lg transition-transform duration-500 hover:scale-110 scale-105"
-        loading="lazy"
-      />
+      <client-only>
+        <nuxt-img
+          :key="gym.id"
+          :src="gym.profile_image"
+          :alt="gym.name"
+          decoding="async"
+          fetchpriority="low"
+          class="w-full h-full object-cover rounded-t-lg transition-transform duration-500 hover:scale-110 scale-105"
+          loading="lazy"
+        />
+      </client-only>
     </div>
     <div class="flex flex-col flex-1 p-4 gap-2">
       <div>
