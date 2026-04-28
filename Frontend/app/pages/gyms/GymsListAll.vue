@@ -74,22 +74,34 @@ const handleOpenModal = ({ name }: { name: string }) => {
   if (document.fullscreenElement) document.exitFullscreen();
 
   const gymSlug = titleCaseToKebab(name);
-  router.replace({ query: { gym: gymSlug } });
+  router.replace({ hash: `#${gymSlug}` });
 };
 
 const handleCloseMapModal = () => {
-  router.replace({ name: "gyms-list-all" });
+  router.replace({ hash: "" });
 };
 
 watch(
-  () => route.query["gym"],
-  (gymSlug) => {
+  () => route.hash,
+  (hash) => {
+    const gymSlug = hash?.slice(1);
     if (gymSlug) {
       const gym = gymStore.gyms.find(
         (g) => titleCaseToKebab(g.name) === gymSlug,
       );
       if (gym) gymStore.setSelectedGym({ id: gym.id });
     } else gymStore.closeSelectedGym();
+  },
+  { immediate: true },
+);
+
+// This resets the selectedBarangay when the user navigates to the root /gyms page
+watch(
+  () => route.path,
+  (newVal) => {
+    if (newVal === "/gyms") {
+      gymStore.setSelectedBarangay("All Locations");
+    }
   },
   { immediate: true },
 );
@@ -137,9 +149,10 @@ useSeoMeta({
 });
 
 const origin = config.public.siteUrl;
+const currentUrl = computed(() => `${config.public.siteUrl}${route.path}`);
 
 useHead({
-  link: [{ rel: "canonical", href: `${origin}/gyms` }],
+  link: [{ rel: "canonical", href: () => currentUrl.value }],
 });
 
 useSchemaOrg([
